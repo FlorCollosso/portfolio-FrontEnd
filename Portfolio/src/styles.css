@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --hueso: #f1f1f1;
+    --arcilla: #ac4425;
+    --verdeOscuro: #224b0c;
+    --grisOscuro: #242323;
+    --grisMedio: #313131;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+hr {
+    background: var(--arcilla);
+    height: 3px;
+    border: 0;
+    width: 50px;
+    position: relative;
+    top: -115px;
+    left: 128px;
+}
+
+/* Header */
+
+header {
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header img {
+    display:block;
+}
+
+header div {
+    padding: 30px 70px;
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    align-items: center;
+}
+
+.apLogo {
+    padding: 10px 50px;
+    width: 200px;
+}
+
+.cover video {
+    position: relative;
+    top: 0;
+    width: 100%;
+    
+}
+
+.coverTitle {
+    position: absolute;
+    z-index: 1;
+    top: 30%; 
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.coverTitle h2 {
+    color: #fff;
+    font-size: 13em;
+    font-family: aileron, sans-serif;
+    font-weight: 800;
+
+}
+
+.coverTitle h1 {
+    color: #fff;
+    position: relative;
+    font-size: 3.22em;
+    font-weight: 200;
+    bottom: 30px;
+}
+
+.fa {
+    width: 20px;
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+}
+
+.titleAbout {
+    width: 70%;
+    margin: auto;
+}
+
+.titleAbout h3 {
+    position: relative;
+    top: -115px;
+    left: 120px;
+    font-size: 2em;
+}
+
+.about h2 {
+    color: var(--hueso);
+    font-size: 13em;
+    font-family: aileron, sans-serif;
+    font-weight: 800;
+}
+
+.infoProfile {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.circleDiv {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.profileImg {
+    width: 100%;
+    height: auto;
+    -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1);
+}
+
+.textInfoProfile {
+    margin-top: 50px;
+}
+
+.textInfoProfile h1 {
+    font-weight: 200;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.textInfoProfile h4 {
+    color: var(--arcilla);
+    font-weight: 400;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.textInfoProfile p {
+    font-weight: 200;
+    font-size: 1.5em;
+    margin-bottom: 60px;
+}
+
+.textInfoProfile img {
+    width: 80px;
+}
+
+/* works */
+
+.works {
+    background: var(--grisOscuro);
+    color: #fff;
+    padding: 50px 0;
+}
+
+.titleWorks {
+    width: 70%;
+    margin: auto;
+}
+
+.titleWorks h2 {
+    color: var(--grisMedio);
+    font-size: 13em;
+    font-family: aileron, sans-serif;
+    font-weight: 800;
+}
+
+.titleWorks h3 {
+    position: relative;
+    top: -115px;
+    left: 125px;
+    font-size: 2em;
+}
