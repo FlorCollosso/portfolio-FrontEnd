@@ -1,0 +1,44 @@
+@import "swiper/swiper.min.css";
+@import "swiper/modules/pagination/pagination.min.css";
+@import "swiper/swiper-bundle.css";
+
+.swiper {
+   height: 650px;
+   margin: auto;
+   width: 100%;
+   padding-top: 60px;
+}
+
+.swiper-wrapper {
+    left: 0;
+}
+
+/* .swiper-pagination-bullet, .swiper-pagination-bullet-active {
+    display: none;
+} */
+
+.projectCard {
+    background: rgba(92, 91, 91, 0.3);
+    height: 450px;
+    width: 230px;
+    backdrop-filter: blur(3px);
+    border-radius: 50px;
+    border: solid 1px rgba(255, 255, 255, .2);
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, .1);
+    padding: 50px 80px;
+    text-align: center;
+    
+}
+
+.swiper-slide {
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    --diameter2: 200px;
+    width: var(--diameter2);
+    height: var(--diameter2);
+    border-radius: 50%;
+    display: block;
+}
