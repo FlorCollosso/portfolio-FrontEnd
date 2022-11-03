@@ -1,5 +1,5 @@
 .projects {
-    background-image: url("../../../assets/img/BackgroundProjects1.jpg");
+    background-image: url("../../../assets/img/BackgroundProjects.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -7,7 +7,8 @@
 
 .projectsCover {
     background: rgba(44, 44, 44, 0.3);
-    padding-top: 80px;
+    padding-top: 50px;
+    background: linear-gradient(180deg, rgba(20,20,20,1) 0%, rgba(20,20,20,0) 50%, rgba(20,20,20,1) 100%);
 }
 
 .titleProjects {
@@ -17,7 +18,7 @@
 }
 
 .titleProjects h2 {
-    color: rgba(37, 37, 37, 0.6);
+    color: var(--transparente);
     font-size: 13vw;
     font-family: aileron, sans-serif;
     font-weight: 800;

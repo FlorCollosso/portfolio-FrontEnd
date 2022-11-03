@@ -1,5 +1,5 @@
 .footer {
-    --footer-background: var(--grisOscuro);
+    --footer-background: var(--rosa);
     position: relative;
     z-index: 1;
     grid-area: footer;

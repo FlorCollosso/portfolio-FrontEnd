@@ -21,14 +21,14 @@
     -webkit-justify-content: center;
     justify-content: center;
     text-align: center;
+    margin: 80px 0 250px 0;
 }
 
-.swiperSlideEducation .cardEdu {
-    padding: 80px 80px 250px 80px;
+.cardEdu {
     text-align: center;
 }
 
-.swiperSlideEducation .cardEdu img {
+.cardEdu img {
     object-fit: cover;
     width: var(--diameter);
     height: var(--diameter);
@@ -41,27 +41,26 @@
     margin: 20px 50px;
     letter-spacing: 1px;
     padding-top: 15px;
+    color: whitesmoke;
 }
 
 .swiperSlideEducation h5 {
-    color: whitesmoke;
+    color: var(--rosa);
     font-size: 15px;
     font-weight: 400;
     letter-spacing: 1px; 
 }
 
 .swiper-button-next {
-    color: var(--grisMedio) !important;
-    margin: 50px;
+    color: #fff !important;
     position: absolute;
     top: 200px;
-    right: 0;
+    margin-right: 50px;
 }
 
 .swiper-button-prev {
-    color: var(--grisMedio) !important;
-    margin: 50px;
+    color: #fff !important;
     position: absolute;
     top: 200px;
-    left: 0;
+    margin-left: 50px;
 }

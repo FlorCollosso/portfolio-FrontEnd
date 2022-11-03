@@ -9,7 +9,7 @@
     --grisMedio: #2c2c2c;
     --celeste: #759e9c;
     --oscuridad: #1d1c1c;
-    --titulos: rgba(228, 227, 227, 0.5);
+    --transparente: rgba(228, 227, 227, 0.3);
   }
 
 *{
