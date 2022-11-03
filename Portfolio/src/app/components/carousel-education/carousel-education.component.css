@@ -1,0 +1,67 @@
+@import "swiper/swiper.min.css";
+@import "swiper/modules/navigation/navigation.min.css";
+
+:root {
+    --diameter: 300px;
+}
+
+.swiperEducation {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.swiperSlideEducation{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.swiperSlideEducation .cardEdu {
+    padding: 80px 80px 250px 80px;
+    text-align: center;
+}
+
+.swiperSlideEducation .cardEdu img {
+    object-fit: cover;
+    width: var(--diameter);
+    height: var(--diameter);
+    border-radius: 100%;
+    cursor: grab;
+}
+
+.swiperSlideEducation h4 {
+    font-size: 25px;
+    margin: 20px 50px;
+    letter-spacing: 1px;
+    padding-top: 15px;
+}
+
+.swiperSlideEducation h5 {
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px; 
+}
+
+.swiper-button-next {
+    color: var(--grisMedio) !important;
+    margin: 50px;
+    position: absolute;
+    top: 200px;
+    right: 0;
+}
+
+.swiper-button-prev {
+    color: var(--grisMedio) !important;
+    margin: 50px;
+    position: absolute;
+    top: 200px;
+    left: 0;
+}

@@ -1,0 +1,50 @@
+.skills {
+    background: var(--grisOscuro);
+    padding: 20px 0 50px 0;
+    -webkit-box-shadow: 0px 10px 40px 5px rgba(0,0,0,0.41);
+    -moz-box-shadow: 0px 10px 40px 5px rgba(0,0,0,0.41);
+    box-shadow: 0px 10px 40px 5px rgba(0,0,0,0.41);
+    position: relative;
+    z-index: 1;
+}
+
+.titleSkills {
+    width: 70%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.titleSkills h2 {
+    color: var(--grisMedio);
+    font-size: 14vw;
+    font-family: aileron, sans-serif;
+    font-weight: 800;
+}
+
+.titleSkills h3 {
+    color: #fff;
+    position: relative;
+    top: -8vw;
+    left: 7vw;
+    width: 34vw;
+    font-size: 2vw;
+    letter-spacing: 1px;
+    z-index: 2;
+}
+
+.titleSkills h3::before {
+    content: '';
+    width: 11.9vw;
+    height: .9vw;
+    position: absolute;
+    bottom: -1px;
+    background: var(--celeste);
+    transition: all .5s ease-in-out;
+    z-index: -1;
+}
+
+.titleSkills h3:hover::before {
+    content: '';
+    height: 100%;
+    position: absolute;
+}

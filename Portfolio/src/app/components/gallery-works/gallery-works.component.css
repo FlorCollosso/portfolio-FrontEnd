@@ -1,0 +1,82 @@
+.containerWork {
+    overflow: hidden;
+    height: 350px;
+    width: 500px;
+    position: relative;
+    margin: 10px;
+}
+
+.imgWork {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.divWorks {
+    padding: 0 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.textContainerWork {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    padding: 20px 30px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: all .6s ease;
+    opacity: 0;
+    width: 100%;
+}
+  
+.containerWork:hover .textContainerWork {
+    z-index: 1;
+    opacity: 1;
+}
+
+.t-stroke {
+    -webkit-text-stroke: 3px #db7b93a4;
+    color: transparent;
+    font-size: 4vw;
+    font-family: aileron, sans-serif;
+    font-weight: 800;
+    position: relative;
+    top: 5px;
+    left: 0;
+}
+
+.t-stroke span {
+    -webkit-text-stroke: 3px var(--rosaClaro);
+    font-family: aileron, sans-serif;
+    position: absolute;
+    left: -3px;
+    top: -3px;
+}
+
+.textContainerWork h4 {
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 2vw;
+    font-weight: 200;
+    margin-bottom: .5vw;
+}
+
+.textContainerWork h5 {
+    color: var(--celeste);
+    font-size: .9vw;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.textContainerWork li {
+    color: #fff;
+    list-style-type: none;
+    padding-bottom: 4px;
+}

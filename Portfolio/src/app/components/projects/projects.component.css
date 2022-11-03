@@ -1,0 +1,54 @@
+.projects {
+    background-image: url("../../../assets/img/BackgroundProjects1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.projectsCover {
+    background: rgba(44, 44, 44, 0.3);
+    padding-top: 80px;
+}
+
+.titleProjects {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
+
+.titleProjects h2 {
+    color: rgba(37, 37, 37, 0.6);
+    font-size: 13vw;
+    font-family: aileron, sans-serif;
+    font-weight: 800;
+    letter-spacing: -.5vw;
+}
+
+.titleProjects h3 {
+    position: relative;
+    top: -7.5vw;
+    left: 7vw;
+    width: 27vw;
+    letter-spacing: 1px;
+    font-size: 2vw;
+    color: whitesmoke;
+    z-index: 2;
+}
+
+.titleProjects h3::before {
+    content: '';
+    width: 9.9vw;
+    height: .9vw;
+    position: absolute;
+    bottom: -1px;
+    background: var(--rosa);
+    transition: all .5s ease-in-out;
+    z-index: -1;
+    
+}
+
+.titleProjects h3:hover::before {
+    content: '';
+    height: 100%;
+    position: absolute;
+}

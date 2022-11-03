@@ -1,0 +1,101 @@
+.footer {
+    --footer-background: var(--grisOscuro);
+    position: relative;
+    z-index: 1;
+    grid-area: footer;
+    text-align: center;
+}
+
+.bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    background: var(--footer-background);
+    filter: url("#blob");
+}
+
+.bubble {
+    position: absolute;
+    left: var(--position, 50%);
+    background: var(--footer-background);
+    border-radius: 100%;
+    animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+    transform: translate(-100%, 40%);
+}
+
+.content {
+    color: #f5f7fa;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 200;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background: var(--footer-background);
+    padding: 2rem 3rem;
+}
+
+.footerMore {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.fa {
+    width: 20px;
+}
+
+.footerLink img {
+    width: 20px;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.footerLink {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerMore div {
+    padding: .3rem;
+}
+
+.footerMore a {
+    box-shadow: inset 0 0 0 0 whitesmoke;
+    color: whitesmoke;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.footerMore a:hover {
+    color: #000;
+    box-shadow: inset 200px 0 0 0 whitesmoke;
+}
+
+@keyframes bubble-size {
+    0%, 75% {
+        width: var(--size, 4rem);
+        height: var(--size, 4rem);
+   }
+    100% {
+        width: 0rem;
+        height: 0rem;
+   }
+}
+
+@keyframes bubble-move {
+    0% {
+        bottom: -4rem;
+   }
+    100% {
+        bottom: var(--distance, 10rem);
+   }
+}

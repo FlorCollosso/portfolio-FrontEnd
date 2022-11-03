@@ -1,0 +1,30 @@
+header {
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header img {
+    display:block;
+    cursor: pointer;
+}
+
+header div {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    align-items: center;
+}
+
+.apLogo {
+    padding: 10px 50px;
+    width: 200px;
+}
+
+.fa {
+    width: 20px;
+}

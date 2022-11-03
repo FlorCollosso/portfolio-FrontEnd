@@ -1,0 +1,54 @@
+.infoProfile {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.circleDiv {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.profileImg {
+    width: 100%;
+    height: auto;
+    -webkit-filter: grayscale(1);
+    filter: gray;
+    filter: grayscale(1);
+}
+
+.textInfoProfile {
+    margin-top: 50px;
+}
+
+.textInfoProfile h1 {
+    font-weight: 200;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.textInfoProfile h4 {
+    color: var(--rosa);
+    font-weight: 400;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.textInfoProfile p {
+    font-weight: 200;
+    font-size: 1.5em;
+    margin-bottom: 60px;
+}
+
+.textInfoProfile img {
+    width: 80px;
+}
+
+#descargaCv {
+    cursor: pointer;
+}
