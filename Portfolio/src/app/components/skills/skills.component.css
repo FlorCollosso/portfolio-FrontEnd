@@ -1,14 +1,15 @@
 .skills {
     background: var(--grisOscuro);
     padding: 20px 0 80px 0;
-    position: relative;
-    z-index: 1;
+    -webkit-box-shadow: 0px 4px 65px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 65px 10px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 65px 10px rgba(0,0,0,0.75);
 }
 
 .titleSkills {
     width: 70%;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .titleSkills h2 {
@@ -21,9 +22,9 @@
 .titleSkills h3 {
     color: #fff;
     position: relative;
-    top: -8vw;
+    bottom: 7.5vw;
     left: 7vw;
-    width: 34vw;
+    width: 24vw;
     font-size: 2vw;
     letter-spacing: 1px;
     z-index: 2;
@@ -31,17 +32,84 @@
 
 .titleSkills h3::before {
     content: '';
-    width: 11.9vw;
+    width: 11.8vw;
     height: .9vw;
     position: absolute;
-    bottom: -1px;
-    background: var(--rosa);
+    bottom: 2px;
+    left: 1px;
+    background: var(--celeste);
     transition: all .5s ease-in-out;
     z-index: -1;
 }
 
-.titleSkills h3:hover::before {
-    content: '';
-    height: 100%;
-    position: absolute;
+@media (hover: hover) {
+
+    .titleSkills h3:hover::before {
+        height: 2vw;
+        position: absolute;
+    }
 }
+
+/* Default screen size (1280-1024) */
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    
+    .titleSkills h3 {
+        width: 25vw;
+    }
+
+    .titleSkills h3::before {
+        width: 12vw;
+        bottom: 1px;
+        left: 0;
+    }
+}
+
+/* Landscape tablet size (1024-768) */
+
+@media all and (min-width: 768px) and (max-width: 1024px)  {
+
+    .titleSkills h3 {
+        width: 26vw;
+    }
+
+    .titleSkills h3::before {
+        width: 12.1vw;
+        bottom: 1px;
+        left: 1px;
+    }
+}
+
+ /* Tablet size (768-480) */
+
+ @media all and (min-width: 480px) and (max-width: 768px) { 
+
+    .titleSkills h3::before {
+        width: 12.5vw;
+        bottom: 0;
+        left: 0;
+    }
+
+    .titleSkills {
+        padding-top: 40px;
+    }
+ }
+  
+ /* Phone size (480-menos ) */
+
+ @media all and (max-width: 480px) { 
+
+    .titleSkills h3 {
+        width: 29vw;
+    }
+
+    .titleSkills h3::before {
+        width: 14vw;
+        bottom: 0;
+        left: 0;
+    }
+
+    .titleSkills {
+        padding-top: 20px;
+    }
+ }

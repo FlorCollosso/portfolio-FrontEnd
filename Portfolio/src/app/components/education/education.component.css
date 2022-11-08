@@ -1,55 +1,58 @@
 .education {
-    background-image: url("../../../assets/img/BackgroundEducation1.jpg");
+    background-image: url("../../../assets/img/BackgroundEducation.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
 .educationCover {
-    background: rgba(44, 44, 44, 0.3);
-    padding-top: 80px;
-    background: linear-gradient(180deg, rgba(20,20,20,1) 0%, rgba(20,20,20,0) 50%, rgba(20,20,20,1) 100%);
+    background: rgba(19, 19, 19, 0.5);
+    padding-top: 120px;
 }
 
 .titleEducation {
     width: 70%;
     margin: auto;
-    text-align: left;
-}
-
-.titleEducation h2 {
-    color: var(--transparente);
-    font-size: 13vw;
-    font-family: aileron, sans-serif;
-    font-weight: 800;
-    letter-spacing: -.4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .titleEducation h3 {
     position: relative;
-    top: -7.5vw;
-    left: 7vw;
-    width: 31vw;
+    margin: auto;
     letter-spacing: 1px;
-    font-size: 2vw;
-    z-index: 2;
+    font-weight: 800;
+    font-size: 3vw;
     color: whitesmoke;
+    z-index: 2;
 }
 
 .titleEducation h3::before {
     content: '';
-    width: 11.2vw;
-    height: .9vw;
+    width: 17vw;
+    height: 1.4vw;
     position: absolute;
-    bottom: -1px;
-    left: 3.1vw;
-    background: var(--rosa);
+    bottom: 2px;
+    left: 2px;
+    background: var(--celeste);
     transition: all .5s ease-in-out;
-    z-index: -1;
+    z-index: -1; 
 }
 
-.titleEducation h3:hover::before {
-    content: '';
-    height: 100%;
-    position: absolute;
+@media (hover: hover) {
+
+    .titleEducation h3:hover::before {
+        height: 2.9vw;
+    }
+}
+
+.titleEducation span{
+    background: linear-gradient(120deg, var(--celeste) 20.69%, rgb(95, 157, 194) 79.69%);
+    margin: auto;
+    margin-bottom: .2vw;
+    font-size: 2vw;
+    font-weight: 600;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

@@ -1,7 +1,7 @@
 .footer {
-    --footer-background: var(--rosa);
+    --footer-background: var(--celeste);
     position: relative;
-    z-index: 1;
+    z-index: 3;
     grid-area: footer;
     text-align: center;
 }

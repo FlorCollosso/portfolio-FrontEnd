@@ -3,16 +3,16 @@
 @import "swiper/swiper-bundle.css";
 
 .swiperProjects {
-   height: 900px;
+   height: 850px;
    width: 100%;
-   margin-top: 50px;
+   margin-top: 5vw;
 }
 
 .projectCard {
     background: rgba(92, 91, 91, 0.3);
-    height: 660px;
-    width: 500px;
-    padding: 30px 30px;
+    width: 440px;
+    height: 600px; 
+    padding: 30px;
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     border-radius: 50px;
@@ -20,18 +20,26 @@
     box-shadow: 0 10px 20px 5px rgba(0, 0, 0, .1);
     text-align: left;
     transition: all 300ms;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .projectCard:hover {
     transform: translateY(-8px);
 }
 
-.containerProjectCardImg {
+.cardImg {
     overflow: hidden;
-    width: 500px;
-    height: 400px;
+    width: 440px;
+    height: 300px;
     border-radius: 5%;
+}
+
+.cardInfo {
+    height: 260px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .swiperSlideProjects {
@@ -51,26 +59,23 @@
 
 .swiperSlideProjects h4 {
     font-size: 30px;
-    margin-top: 20px;
     color: #fff;
     letter-spacing: 1px;
     text-align: left;
 }
 
 .swiperSlideProjects h5 {
-    font-size: 20px;
+    font-size: 22px;
     color: darkgrey;
-    margin-top: 10px;
     font-weight: 400;
     font-style: italic;
     text-align: left;
 }
 
 .swiperSlideProjects p {
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
     text-align: left;
-    margin: 10px 0;
     font-weight: 100;
 }
 
@@ -88,76 +93,188 @@
     top: 0;
     height: 1px;
     background: rgba(255, 255, 255, .2);
-    margin: 20px 0;
 }
 
-/* @media screen and (max-width: 1200px) {
+/* Tamaño por defecto pantallas (1280-1024) */
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+
+    .swiperProjects {
+        height: 700px;
+        margin-top: 5vw;
+     }
 
     .projectCard {
-        height: 420px;
-        width: 300px;
+        width: 340px;
+        height: 500px;
+        padding: 25px;
+        border-radius: 40px;
     }
 
-    .containerProjectCardImg {
-        width: 290px;
-        height: 210px;
+    .cardImg {
+        width: 340px;
+        height: 230px;
+    }
+
+    .cardInfo {
+        height: 240px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .swiperSlideProjects h4 {
+        font-size: 28px;
+    }
+    
+    .swiperSlideProjects h5 {
+        font-size: 20px;
+    }
+    
+    .swiperSlideProjects p {
+        font-size: 18px;
+    }
+    
+    .swiperSlideProjects a {
+        font-size: 16px;
+    }
+}
+
+/* Tamaño tablet horizontal (1024-768) */
+
+@media all and (min-width: 768px) and (max-width: 1024px)  {
+
+    .swiperProjects {
+        height: 550px;
+        margin-top: 4.5vw;
+     }
+
+    .projectCard {
+        width: 280px;
+        height: 390px;
+        padding: 25px;
+        border-radius: 30px;
+    }
+
+    .cardImg {
+        width: 280px;
+        height: 180px;
+    }
+
+    .cardInfo {
+        height: 180px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     .swiperSlideProjects h4 {
         font-size: 22px;
-        margin-top: 20px;
     }
     
     .swiperSlideProjects h5 {
-        font-size: 15px;
-        margin-top: 8px;
+        font-size: 16px;
     }
     
     .swiperSlideProjects p {
-        font-size: 13px;
-        margin: 8px 0;
+        font-size: 14px;
     }
     
     .swiperSlideProjects a {
-        font-size: 13px;
-    }
-
-    .swiperSlideProjects hr {
-        margin: 15px 0;
+        font-size: 12px;
     }
 }
 
-@media screen and (max-width: 750px) {
+ /* Tamaño tablet (768-480) */
+
+ @media all and (min-width: 480px) and (max-width: 768px) { 
+
+    .swiperProjects {
+        height: 450px;
+        margin-top: 4vw;
+     }
+
     .projectCard {
-        height: 360px;
-        width: 230px;
+        width: 200px;
+        height: 305px;
+        padding: 18px;
+        border-radius: 25px;
     }
 
-    .containerProjectCardImg {
-        width: 230px;
-        height: 180px;
+    .cardImg {
+        width: 200px;
+        height: 130px;
+    }
+
+    .cardInfo {
+        height: 160px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     .swiperSlideProjects h4 {
-        font-size: 18px;
-        margin-top: 15px;
+        font-size: 19px;
     }
     
     .swiperSlideProjects h5 {
-        font-size: 13px;
-        margin-top: 5px;
+        font-size: 14px;
     }
     
     .swiperSlideProjects p {
         font-size: 12px;
-        margin: 5px 0;
     }
     
     .swiperSlideProjects a {
-        font-size: 11px;
+        font-size: 10px;
+    }
+ }
+  
+ /* Tamaño teléfonos (480-menos ) */
+
+ @media all and (max-width: 480px) { 
+
+    .swiperProjects {
+        height: 300px;
+        margin-top: 4vw;
+     }
+
+    .projectCard {
+        width: 120px;
+        height: 200px;
+        padding: 10px;
+        border-radius: 16px;
     }
 
-    .swiperSlideProjects hr {
-        margin: 15px 0;
+    .cardImg {
+        width: 120px;
+        height: 80px;
     }
-} */
+
+    .cardInfo {
+        height: 110px;
+        margin-top: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .swiperSlideProjects h4 {
+        font-size: 12px;
+    }
+    
+    .swiperSlideProjects h5 {
+        font-size: 9px;
+    }
+    
+    .swiperSlideProjects p {
+        font-size: 7px;
+    }
+    
+    .swiperSlideProjects a {
+        font-size: 5px;
+    }
+ }

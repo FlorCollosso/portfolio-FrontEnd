@@ -4,7 +4,7 @@
     [centeredSlides]="true"
     [initialSlide]="1"
     [slideToClickedSlide]="true"
-    [slidesPerView]="5"
+    [slidesPerView]="4"
     [coverflowEffect]="{
       rotate: 30,
       stretch: 0,
@@ -13,43 +13,51 @@
       slideShadows: false
     }"
     [pagination]="false"
+    
     class="swiperProjects"
+    #swiperProjects
   >
 
     <ng-template swiperSlide class="swiperSlideProjects">
         <div class="projectCard">
-            <div class="containerProjectCardImg">
+            <div class="cardImg">
                 <img src="../assets/img/DiseñoWebMR.jpg" alt="">
             </div>
-            <h4>MR Construcciones</h4>
-            <h5>Abr 2020 - Nov 2020</h5>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-            <hr>
-            <a href="">www.mrcontrucciones.com.ar</a>
+            <div class="cardInfo">
+                <h4>MR Construcciones</h4>
+                <h5>Abr 2020 - Nov 2020</h5>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                <hr>
+                <a href="">www.mrcontrucciones.com.ar</a>
+            </div>
         </div>
     </ng-template>
     <ng-template swiperSlide class="swiperSlideProjects">
         <div class="projectCard">
-            <div class="containerProjectCardImg">
+            <div class="cardImg">
                 <img src="../assets/img/DiseñoPortfolio.jpg" alt="">
             </div>
-            <h4>Mi Portfolio Web</h4>
-            <h5>Jul 2022 - Ene 2023</h5>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-            <hr>
-            <a href="">www.florcollosso.com.ar</a>
+            <div class="cardInfo">
+                <h4>Mi Portfolio Web</h4>
+                <h5>Jul 2022 - Ene 2023</h5>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                <hr>
+                <a href="">www.florcollosso.com.ar</a>
+            </div>
         </div>
     </ng-template>
     <ng-template swiperSlide class="swiperSlideProjects">
         <div class="projectCard">
-            <div class="containerProjectCardImg">
+            <div class="cardImg">
                 <img src="../assets/img/DiseñoWebMR.jpg" alt="">
             </div>
-            <h4>Crafting</h4>
-            <h5>Ene 2023 - Abr 2023</h5>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-            <hr>
-            <a href="">www.crafting.com.ar</a>
+            <div class="cardInfo">
+                <h4>Crafting</h4>
+                <h5>Ene 2023 - Abr 2023</h5>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                <hr>
+                <a href="">www.crafting.com.ar</a>
+            </div>
         </div>
     </ng-template>
   </swiper> 

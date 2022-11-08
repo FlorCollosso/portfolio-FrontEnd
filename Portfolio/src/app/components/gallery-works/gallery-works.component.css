@@ -43,7 +43,7 @@
 .t-stroke {
     -webkit-text-stroke: 3px #db7b93a4;
     color: transparent;
-    font-size: 4vw;
+    font-size: 5vw;
     font-family: aileron, sans-serif;
     font-weight: 800;
     position: relative;
@@ -72,7 +72,7 @@
     font-size: .9vw;
     font-style: italic;
     font-weight: 400;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .textContainerWork li {
@@ -80,3 +80,115 @@
     list-style-type: none;
     padding-bottom: 4px;
 }
+
+
+/* Default screen size (1280-1024) */
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+
+    .textContainerWork {
+        padding: 30px 40px;
+    }
+
+    .textContainerWork h4 {
+        font-size: 2.2vw;
+    }
+
+    .textContainerWork h5  {
+        font-size: 1vw;
+        margin-bottom: 15px;
+    }
+
+    .t-stroke {
+        font-size: 5.5vw;
+    } 
+}
+
+/* Landscape tablet size (1024-768) */
+
+@media all and (min-width: 768px) and (max-width: 1024px)  {
+
+    .containerWork {
+        height: 520px;
+        width: 750px;
+    }
+
+    .textContainerWork {
+        padding: 30px 40px;
+    }
+
+    .textContainerWork h4 {
+        font-size: 4vw;
+    }
+
+    .textContainerWork h5  {
+        font-size: 1.8vw;
+        margin-bottom: 12px;
+    }
+
+    .t-stroke {
+        font-size: 10vw;
+    }
+}
+
+ /* Tablet size (768-480) */
+
+ @media all and (min-width: 480px) and (max-width: 768px) { 
+
+    .containerWork {
+        height: 420px;
+        width: 580px;
+    }
+
+    .textContainerWork {
+        padding: 30px 40px;
+    }
+
+    .textContainerWork h4 {
+        font-size: 4vw;
+    }
+
+    .textContainerWork h5  {
+        font-size: 1.8vw;
+        margin-bottom: 12px;
+    }
+
+    .t-stroke {
+        font-size: 12vw;
+    }
+ }
+  
+ /* Phone size (480-menos ) */
+
+ @media all and (max-width: 480px) { 
+
+    .divWorks {
+        padding: 0 40px;
+    }
+
+    .containerWork {
+        height: 200px;
+        width: 380px;
+    }
+
+    .textContainerWork {
+        padding: 10px 20px;
+    }
+
+    .textContainerWork h4 {
+        font-size: 4vw;
+    }
+
+    .textContainerWork h5  {
+        font-size: 1.8vw;
+        margin-bottom: 12px;
+    }
+
+    .t-stroke {
+        font-size: 12vw;
+    }
+
+    .textContainerWork li {
+        font-size: 2vw;
+    }
+ }

@@ -2,13 +2,17 @@
     display: flex;
     padding: 80px 0 150px 0;
     flex-direction: column;
-    background: var(--grisOscuro) ;
+    background: var(--grisOscuro);
+    -webkit-box-shadow: 0px 4px 65px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 65px 10px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 65px 10px rgba(0,0,0,0.75);
     position: relative;
+    z-index: 2;
 }
 
 .titleWorks {
     width: 70%;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 40px auto;
 }
 
 .titleWorks h2 {
@@ -21,7 +25,7 @@
 
 .titleWorks h3 {
     position: relative;
-    top: -6.8vw;
+    bottom: 7.5vw;
     left: 7vw;
     width: 27vw;
     font-size: 2vw;
@@ -32,19 +36,91 @@
 
 .titleWorks h3::before {
     content: '';
-    width: 12vw;
+    width: 11.7vw;
     height: .9vw;
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
+    left: 3px;
     background: var(--rosa);
     transition: all .5s ease-in-out;
     z-index: -1;
-    
 }
 
-.titleWorks h3:hover::before {
-    content: '';
-    height: 100%;
-    position: absolute;
-    background: var(--rosa);
+@media (hover: hover) {
+
+    .titleWorks h3:hover::before {
+        height: 2vw;
+    }
 }
+
+/* Default screen size (1280-1024) */
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+
+    .titleWorks {
+        margin: 0 auto 30px auto;
+    }
+    
+    .titleWorks h3::before {
+        width: 12.1vw;
+        left: 0;
+    }
+    
+    .titleWorks h3 {
+        width: 28vw;
+    }
+}
+
+/* Landscape tablet size (1024-768) */
+
+@media all and (min-width: 768px) and (max-width: 1024px)  {
+
+    .titleWorks {
+        margin: 0 auto 30px auto;
+    }
+
+    .titleWorks h3 {
+        width: 28vw;
+    }
+
+    .titleWorks h3::before {
+        width: 12.2vw;
+        left: 1px;
+    }
+}
+
+/* Tablet size (768-480) */
+
+ @media all and (min-width: 480px) and (max-width: 768px) { 
+
+    .titleWorks h3 {
+        width: 29vw;
+    }
+
+    .titleWorks h3::before {
+        width: 12.2vw;
+        left: 1px;
+    }
+ }
+  
+ /* Phone size (480-menos ) */
+
+ @media all and (max-width: 480px) { 
+
+    .works {
+        padding: 50px 0 80px 0;
+    }
+
+    .titleWorks {
+        margin: 0 auto 20px auto;
+    }
+
+    .titleWorks h3 {
+        width: 33vw;
+    }
+
+    .titleWorks h3::before {
+        width: 14.1vw;
+        left: 0;
+    }
+ }

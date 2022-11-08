@@ -1,6 +1,5 @@
 .coverTitle {
     position: absolute;
-    z-index: 1;
     top: 35%; 
     left: 50%;
     transform: translateX(-50%);
