@@ -7,7 +7,9 @@
     --grisOscuro: #141414;
     --grisMedio: #2c2c2c;
     --celeste: #80bdbb;
-    --oscuridad: #1d1c1c;
+    --rating-color-good: #80bdbb;
+    --rating-color-meh: #e0e98c;
+    --rating-color-bad: #f19b91;
   }
 
 *{
