@@ -40,6 +40,8 @@
         z-index: 2;
     }
 
+    /* Bar background */
+
     .rating-mask {
         position: relative;
         bottom: var(--rating-size);
@@ -55,7 +57,7 @@
         z-index: 1;
     }
   
-/* Bar mask, creates an inner circle with the same color as thee background */
+    /* Bar mask, creates an inner circle with the same color as thee background */
 
     .rating::after {
         content: "";
@@ -148,12 +150,16 @@
  @media all and (max-width: 480px) { 
 
     .containerSkills {
+        display: flex;
+        position: relative;
         flex-direction: column;
-        width: 100%;
         padding: 0;
+        left: 0;
     }
-    
+
     .skillCard {
+        --rating-size: 100px;
+        --bar-size: 12px;
         padding: 20px 0;
         text-align: left;
     }
@@ -164,40 +170,36 @@
         font-size: small;
     }
 
-    .progress {
-        --width: 150px;
-        --height: 10px;
-        --stroke: 12px;
-        background: var(--grisMedio);
-        height: var(--height);
-        width: var(--width);
+    .rating {
         position: relative;
-        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
-    }
-
-    .progress__mask, .progress__fill {
-        height: var(--height);
-        width: 50%;
-        overflow: hidden;
-        position: absolute;
-    }
-
-    .progress__fill {
-        background: var(--celeste);
-    }
-
-    .progress:after {
-        position: absolute;
-        content: attr(data-progress);
-        background: var(--grisOscuro);
         display: flex;
-        bottom: var(--stroke);
-        top: var(--stroke);
-        left: var(--stroke);
-        right: var(--stroke);
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background: var(--celeste);
         color: transparent;
-        font-size: 1.5rem;
+        width: var(--rating-size);
+        height: 10px;
+        z-index: 2;
+    }
+
+    /* Bar background */
+
+    .rating-mask {
+        display: none;
+    }
+  
+    /* Bar mask, creates an inner circle with the same color as thee background */
+
+    .rating::after {
+        content: "";
+        position: absolute;
+        top: var(--bar-size);
+        right: var(--bar-size);
+        bottom: var(--bar-size);
+        left: var(--bar-size);
+        background: var(--grisOscuro);
+        border-radius: inherit;
+        z-index: 2;
     }
  }

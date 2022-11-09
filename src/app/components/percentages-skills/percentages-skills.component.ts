@@ -10,7 +10,7 @@ export class PercentagesSkillsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    if(window.innerWidth <= 1880) {
+    if(window.innerWidth >= 768) {
 
       const ratings = Array.from(document.getElementsByClassName('rating'));
 
