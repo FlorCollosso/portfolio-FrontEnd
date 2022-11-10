@@ -99,3 +99,10 @@
         bottom: var(--distance, 10rem);
    }
 }
+
+@media all and (max-width: 480px) { 
+
+    .footerMore {
+        width: 150px;
+    }
+}

@@ -82,9 +82,9 @@
 }
 
 
-/* Default screen size (1280-1024) */
+/* Default screen size (1440-1024) */
 
-@media all and (min-width: 1024px) and (max-width: 1280px) {
+@media all and (min-width: 1024px) and (max-width: 1440px) {
 
     .textContainerWork {
         padding: 30px 40px;

@@ -22,7 +22,7 @@
 .titleSkills h3 {
     color: #fff;
     position: relative;
-    bottom: 7.5vw;
+    bottom: 8vw;
     left: 7vw;
     width: 24vw;
     font-size: 2vw;
@@ -50,9 +50,9 @@
     }
 }
 
-/* Default screen size (1280-1024) */
+/* Default screen size (1440-1024) */
 
-@media all and (min-width: 1024px) and (max-width: 1280px) {
+@media all and (min-width: 1024px) and (max-width: 1440px) {
     
     .titleSkills h3 {
         width: 25vw;
@@ -99,12 +99,18 @@
 
  @media all and (max-width: 480px) { 
 
+    .titleSkills h2 {
+        font-size: 16vw;
+    }
+
     .titleSkills h3 {
-        width: 29vw;
+        width: 30vw;
+        font-size: 2.1vw;
+        bottom: 9vw;
     }
 
     .titleSkills h3::before {
-        width: 14vw;
+        width: 14.5vw;
         bottom: 0;
         left: 0;
     }

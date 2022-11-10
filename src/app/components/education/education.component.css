@@ -40,13 +40,6 @@
     z-index: -1; 
 }
 
-@media (hover: hover) {
-
-    .titleEducation h3:hover::before {
-        height: 2.9vw;
-    }
-}
-
 .titleEducation span{
     background: linear-gradient(120deg, var(--celeste) 20.69%, rgb(95, 157, 194) 79.69%);
     margin: auto;
@@ -56,3 +49,80 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@media (hover: hover) {
+
+    .titleEducation h3:hover::before {
+        height: 2.9vw;
+    }
+}
+
+/* Default screen size (1440-1024) */
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+    
+    .educationCover {
+        padding-top: 110px;
+    }
+
+    .titleEducation h3::before {
+        width: 17.15vw;
+        left: 2px;
+    }
+}
+
+/* Landscape tablet size (1024-768) */
+
+@media all and (min-width: 768px) and (max-width: 1024px)  {
+
+    .educationCover {
+        padding-top: 90px;
+    }
+
+    .titleEducation h3::before {
+        width: 17.5vw;
+        left: 1px;
+    }
+}
+
+ /* Tablet size (768-480) */
+
+ @media all and (min-width: 480px) and (max-width: 768px) { 
+
+    .educationCover {
+        padding-top: 70px;
+    }
+
+    .titleEducation h3::before {
+        width: 15.7vw;
+        left: 1px;
+    }
+ }
+  
+ /* Phone size (480-menos ) */
+
+ @media all and (max-width: 480px) { 
+
+    .educationCover {
+        padding-top: 45px;
+    }
+
+    .titleEducation h3 {
+        font-size: 4vw;
+    }
+
+    .titleEducation h3::before {
+        width: 24.7vw;
+        left: 0;
+        height: 1.3vw;
+    }
+
+    .titleEducation h3:hover::before {
+        height: 2.45vw;
+    }
+
+    .titleEducation span {
+        font-size: 3vw;
+        margin-bottom: .4vw;
+    }
+ }

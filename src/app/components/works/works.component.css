@@ -53,9 +53,9 @@
     }
 }
 
-/* Default screen size (1280-1024) */
+/* Default screen size (1440-1024) */
 
-@media all and (min-width: 1024px) and (max-width: 1280px) {
+@media all and (min-width: 1024px) and (max-width: 1440px) {
 
     .titleWorks {
         margin: 0 auto 30px auto;
@@ -115,12 +115,19 @@
         margin: 0 auto 20px auto;
     }
 
+    .titleWorks h2 {
+        color: var(--grisMedio);
+        font-size: 15vw;
+    }
+
     .titleWorks h3 {
-        width: 33vw;
+        width: 34vw;
+        font-size: 2.1vw;
+        bottom: 8.5vw;
     }
 
     .titleWorks h3::before {
-        width: 14.1vw;
+        width: 14.3vw;
         left: 0;
     }
  }

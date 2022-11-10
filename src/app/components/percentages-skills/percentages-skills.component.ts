@@ -31,6 +31,27 @@ export class PercentagesSkillsComponent implements OnInit {
 
         rating.setAttribute("style", gradient);
       });
-    } 
+    } else {
+      
+        const ratingsSmall = Array.from(document.getElementsByClassName('rating'));
+
+        ratingsSmall.forEach((rating) => { 
+          const ratingContent = rating.innerHTML;
+          const ratingScore = parseInt(ratingContent, 10);
+
+          // Define if the score is good, meh or bad according to its value
+          
+          const scoreClass = ratingScore < 40 ? "bad" : ratingScore < 60 ? "meh" : "good";
+
+          // Add score class to the rating
+
+          rating.classList.add(scoreClass);
+
+          const ratingColor = window.getComputedStyle(rating).backgroundColor;
+          const gradient = `background: linear-gradient(to right, ${ratingColor} ${ratingScore}%, transparent 0 100%)`;
+
+          rating.setAttribute("style", gradient);
+        });
+      }
   }
 }

@@ -28,20 +28,20 @@
 
 .textInfoProfile h1 {
     font-weight: 200;
-    font-size: 2.8em;
+    font-size: 2.5vw;
     margin-bottom: 10px;
 }
 
 .textInfoProfile h4 {
     color: var(--rosa);
     font-weight: 400;
-    font-size: 1.8em;
+    font-size: 1.5vw;
     margin-bottom: 20px;
 }
 
 .textInfoProfile p {
     font-weight: 200;
-    font-size: 1.5em;
+    font-size: 1.3vw;
     margin-bottom: 60px;
 }
 
@@ -52,3 +52,155 @@
 #descargaCv {
     cursor: pointer;
 }
+
+/* Default screen size (1440-1024) */
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+    
+    .infoProfile {
+        width: 50%;
+    }
+
+    .circleDiv {
+        width: 250px;
+        height: 250px;
+        margin-top: 15px;
+    }
+    
+    .textInfoProfile {
+        margin-top: 40px;
+    }
+    
+    .textInfoProfile h1 {
+        font-size: 4vw;
+        margin-bottom: 8px;
+    }
+    
+    .textInfoProfile h4 {
+        font-size: 2vw;
+        margin-bottom: 10px;
+    }
+    
+    .textInfoProfile p {
+        font-size: 1.3vw;
+        margin-bottom: 50px;
+    }
+
+    #descargaCv {
+        width: 70px;
+    }
+}
+
+/* Landscape tablet size (1024-768) */
+
+@media all and (min-width: 768px) and (max-width: 1024px)  {
+
+    .infoProfile {
+        width: 70%;
+    }
+
+    .circleDiv {
+        width: 200px;
+        height: 200px;
+        margin-top: 30px;
+    }
+    
+    .textInfoProfile {
+        margin-top: 40px;
+    }
+    
+    .textInfoProfile h1 {
+        font-size: 4.5vw;
+        margin-bottom: 8px;
+    }
+    
+    .textInfoProfile h4 {
+        font-size: 2.5vw;
+        margin-bottom: 10px;
+    }
+    
+    .textInfoProfile p {
+        font-size: 1.8vw;
+        margin-bottom: 50px;
+    }
+
+    #descargaCv {
+        width: 70px;
+    }
+}
+
+ /* Tablet size (768-480) */
+
+ @media all and (min-width: 480px) and (max-width: 768px) { 
+
+    .infoProfile {
+        width: 70%;
+    }
+
+    .circleDiv {
+        width: 200px;
+        height: 200px;
+        margin-top: 25px;
+    }
+    
+    .textInfoProfile {
+        margin-top: 40px;
+    }
+    
+    .textInfoProfile h1 {
+        font-size: 4.5vw;
+        margin-bottom: 8px;
+    }
+    
+    .textInfoProfile h4 {
+        font-size: 2.5vw;
+        margin-bottom: 10px;
+    }
+    
+    .textInfoProfile p {
+        font-size: 1.8vw;
+        margin-bottom: 40px;
+    }
+
+    #descargaCv {
+        width: 60px;
+    }
+ }
+  
+ /* Phone size (480-menos ) */
+
+ @media all and (max-width: 480px) { 
+
+    .infoProfile {
+        width: 70%;
+    }
+
+    .circleDiv {
+        width: 150px;
+        height: 150px;
+        margin-top: 25px;
+    }
+    
+    .textInfoProfile {
+        margin-top: 40px;
+    }
+    
+    .textInfoProfile h1 {
+        font-size: 6vw;
+        margin-bottom: 8px;
+    }
+    
+    .textInfoProfile h4 {
+        font-size: 3vw;
+        margin-bottom: 10px;
+    }
+    
+    .textInfoProfile p {
+        font-size: 2vw;
+        margin-bottom: 30px;
+    }
+
+    #descargaCv {
+        width: 50px;
+    }
+ }

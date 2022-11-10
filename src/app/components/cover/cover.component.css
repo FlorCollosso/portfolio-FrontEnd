@@ -8,7 +8,7 @@
 }
 
 .coverTitle h2 { 
-    font-size: 16em;
+    font-size: 16vw;
     font-family: aileron, sans-serif;
     font-weight: 800;
     text-align: left;    
@@ -17,3 +17,43 @@
 .cover video {
     display: block;
 }
+
+/* Default screen size (1440-1024) */
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+
+    .apLogo {
+        padding: 25px 40px;
+    }
+}
+
+/* Landscape tablet size (1024-768) */
+
+@media all and (min-width: 768px) and (max-width: 1024px)  {
+
+    .coverTitle h2 { 
+        font-size: 22vw;    
+    }
+}
+
+ /* Tablet size (768-480) */
+
+ @media all and (min-width: 480px) and (max-width: 768px) { 
+
+    .coverTitle h2 { 
+        font-size: 25vw;    
+    }
+ }
+  
+ /* Phone size (480-menos ) */
+
+ @media all and (max-width: 480px) { 
+
+    .cover {
+        height: 220vw;
+    }
+
+    .coverTitle h2 { 
+        font-size: 25vw;    
+    }
+ }

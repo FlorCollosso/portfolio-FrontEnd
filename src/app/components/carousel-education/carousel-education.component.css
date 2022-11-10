@@ -1,15 +1,12 @@
 @import "swiper/swiper.min.css";
 @import "swiper/modules/navigation/navigation.min.css";
 
-:root {
-    --diameter: 300px;
-}
-
 .swiperEducation {
     width: 100%;
     height: 100%;
     position: relative;
     margin-top: 100px;
+    --diameter: 300px;
 }
 
 .swiperSlideEducation{
@@ -55,13 +52,185 @@
 .swiper-button-next {
     color: #fff !important;
     position: absolute;
-    top: 200px;
+    top: 100px;
     margin-right: 50px;
 }
 
 .swiper-button-prev {
     color: #fff !important;
     position: absolute;
-    top: 200px;
+    top: 100px;
     margin-left: 50px;
 }
+
+/* Default screen size (1440-1024) */
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+    
+    .swiperEducation {
+        margin-top: 100px;
+        --diameter: 200px;
+    }
+
+    .swiperSlideEducation{
+        margin: 0 0 120px 0;
+    }
+
+    .swiperSlideEducation h4 {
+        font-size: 24px;
+        margin: 8px 20px;
+    }
+    
+    .swiperSlideEducation h5 {
+        font-size: 15px; 
+    }
+
+    .swiper-button-next {
+        margin-right: 20px;
+        top: 40% !important;
+    }
+
+    .swiper-button-next:after {
+        font-size: 40px !important;
+
+    }
+    
+    .swiper-button-prev {
+        margin-left: 20px;
+        top: 40% !important;
+    }
+
+    .swiper-button-prev:after {
+        font-size: 40px !important;
+
+    }
+}
+
+/* Landscape tablet size (1024-768) */
+
+@media all and (min-width: 768px) and (max-width: 1024px)  {
+
+    .swiperEducation {
+        margin-top: 100px;
+        --diameter: 150px;
+    }
+
+    .swiperSlideEducation{
+        margin: 0 0 120px 0;
+    }
+
+    .swiperSlideEducation h4 {
+        font-size: 20px;
+        margin: 8px 20px;
+    }
+    
+    .swiperSlideEducation h5 {
+        font-size: 14px; 
+    }
+
+    .swiper-button-next {
+        margin-right: 10px;
+        top: 40% !important;
+    }
+
+    .swiper-button-next:after {
+        font-size: 40px !important;
+
+    }
+    
+    .swiper-button-prev {
+        margin-left: 10px;
+        top: 40% !important;
+    }
+
+    .swiper-button-prev:after {
+        font-size: 40px !important;
+
+    }
+}
+
+ /* Tablet size (768-480) */
+
+ @media all and (min-width: 480px) and (max-width: 768px) { 
+
+    .swiperEducation {
+        margin-top: 100px;
+        --diameter: 150px;
+    }
+
+    .swiperSlideEducation{
+        margin: 0 0 100px 0;
+    }
+
+    .swiperSlideEducation h4 {
+        font-size: 20px;
+        margin: 8px 20px;
+    }
+    
+    .swiperSlideEducation h5 {
+        font-size: 14px; 
+    }
+
+    .swiper-button-next {
+        margin-right: 10px;
+        top: 40% !important;
+    }
+
+    .swiper-button-next:after {
+        font-size: 40px !important;
+
+    }
+    
+    .swiper-button-prev {
+        margin-left: 10px;
+        top: 40% !important;
+    }
+
+    .swiper-button-prev:after {
+        font-size: 40px !important;
+
+    }
+ }
+  
+ /* Phone size (480-menos ) */
+
+ @media all and (max-width: 480px) { 
+
+    .swiperEducation {
+        margin-top: 70px;
+        --diameter: 110px;
+    }
+
+    .swiperSlideEducation{
+        margin: 0 0 60px 0;
+    }
+
+    .swiperSlideEducation h4 {
+        font-size: 12px;
+        margin: 3px 20px;
+    }
+    
+    .swiperSlideEducation h5 {
+        font-size: 8px; 
+    }
+
+    .swiper-button-next {
+        margin-right: 0;
+        top: 45% !important;
+    }
+
+    .swiper-button-next:after {
+        font-size: 25px !important;
+
+    }
+    
+    .swiper-button-prev {
+        margin-left: 0;
+        top: 45% !important;
+    }
+
+    .swiper-button-prev:after {
+        font-size: 25px !important;
+
+    }
+ }
