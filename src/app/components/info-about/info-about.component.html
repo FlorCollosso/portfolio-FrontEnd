@@ -1,12 +1,11 @@
 <div class="infoProfile">
     <div class="circleDiv">
-        <img src="../../../assets/img/ProfileImg.jpg" alt="Foto de perfil" class="profileImg">
+        <img [src]="person.fotoPerfil" alt="Foto de perfil" class="profileImg">
     </div>
     <div class="textInfoProfile">
-        <h1>Florencia Collosso</h1>
-        <h4>Diseñadora Gráfica | Desarrolladora Full Stack Jr.</h4>
-        <p>Nací en Córdoba, Argentina, y empece a estudiar diseño a mis 20 años. Soy amante del diseño y la tecnología, emprendedora, curiosa y disfruto de las nuevas experiencias. En mis trabajos me enfoco en comunicar de la forma mas eficiente a través de la estética de mis diseños 
-        </p>
+        <h1>{{person.nombre}} {{person.apellido}}</h1>
+        <h4>{{person.titulo}}</h4>
+        <p>{{person.descripcion}}</p>
         <img src="../../../assets/icons/download_arrow.png" alt="Icono de descarga" id="descargaCv">
     </div> 
 </div>

@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { CommonModule } from '@angular/common';
 
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarouselProjectsComponent } from './components/carousel-projects/carousel-projects.component';
@@ -19,6 +20,9 @@ import { WorksComponent } from './components/works/works.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { EducationComponent } from './components/education/education.component';
+import { StartSessionComponent } from './components/start-session/start-session.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { interceptorProvider } from './services/interceptor-service';
 
 @NgModule({
   declarations: [
@@ -36,15 +40,21 @@ import { EducationComponent } from './components/education/education.component';
     ProjectsComponent,
     SkillsComponent,
     EducationComponent,
+    StartSessionComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
     AppRoutingModule,
     FormsModule,
-    SwiperModule
+    SwiperModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

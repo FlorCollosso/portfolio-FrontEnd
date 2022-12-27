@@ -29,6 +29,13 @@ header div {
     width: 20px;
 }
 
+header button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+}
+
 /* Default screen size (1440-1024) */
 
 @media all and (min-width: 1024px) and (max-width: 1440px) {
@@ -72,17 +79,21 @@ header div {
  @media all and (max-width: 480px) { 
 
     header div {
-        padding: 10px 50px;
+        padding: 10px 35px;
         width: 100px;
         font-size: 12px;
     }
     
     .apLogo {
-        padding: 5px 25px;
+        padding: 5px 20px;
         width: 100px;
     }
     
     .fa {
-        width: 10px;
+        width: 14px;
+    }
+
+    header button {
+        font-size: 14px;
     }
  }

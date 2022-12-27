@@ -24,6 +24,7 @@
 
 .cardEdu {
     text-align: center;
+    max-width: 480px;
 }
 
 .cardEdu img {

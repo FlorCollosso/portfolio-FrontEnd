@@ -1,4 +1,7 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { person } from 'src/app/models/person.model';
+import { PersonService } from 'src/app/services/person.service';
 
 @Component({
   selector: 'app-info-about',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoAboutComponent implements OnInit {
 
-  constructor() { }
+  person: person = new person ("", "", "", "", "");
+
+  constructor(public personService: PersonService) { }
 
   ngOnInit(): void {
+    this.personService.getPerson().subscribe(data => {this.person = data});
   }
 
 }
