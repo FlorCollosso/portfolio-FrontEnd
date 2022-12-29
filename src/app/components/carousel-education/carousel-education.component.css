@@ -1,6 +1,65 @@
 @import "swiper/swiper.min.css";
 @import "swiper/modules/navigation/navigation.min.css";
 
+.buttonAdd {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 170px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.buttonAdd:hover {
+    transition: .2s ease-in;
+    transform: scale(1.2);
+}
+
+.buttonAdd img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.eduButtons {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.eduButtons img{
+    height: 20px;
+    cursor: pointer;
+}
+
+.eduButtons button {
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    margin: 0 5px;
+}
+
+.eduButtons button:hover {
+    transition: .2s ease-in;
+    transform: scale(1.2);
+}
+
+.containerEdu {
+    position: relative;
+    left: 0;
+    justify-items: center;
+}
+
 .swiperEducation {
     width: 100%;
     height: 100%;
@@ -19,7 +78,7 @@
     -webkit-justify-content: center;
     justify-content: center;
     text-align: center;
-    margin: 80px 0 250px 0;
+    margin: 80px 0 200px 0;
 }
 
 .cardEdu {

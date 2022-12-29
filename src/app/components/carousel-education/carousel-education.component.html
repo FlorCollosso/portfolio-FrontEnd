@@ -1,5 +1,6 @@
+<button class="buttonAdd" type="button" routerLink="/nuevaedu" *ngIf="isLoggedIn"><img src="../../../assets/icons/plus-solid.svg" alt="Botón agregar"></button>
 <swiper 
-[navigation]="true" 
+[navigation]="true"
 class="swiperEducation"
 [slidesPerView]="2"
 [breakpoints]="{
@@ -21,32 +22,17 @@ class="swiperEducation"
     }
 }"
 >
-    <ng-template swiperSlide class="swiperSlideEducation">
-        <div class="cardEdu">
-            <img src="../../../assets/img/CoderHouseLogo.jpg" alt="Logo Coder House">
-            <h4>Web Developer</h4>
-            <h5>Jul 2020 - Sep 2020</h5>
-        </div>
-    </ng-template>
-    <ng-template swiperSlide class="swiperSlideEducation">
-        <div class="cardEdu">
-            <img src="../../../assets/img/IESLogo.jpg" alt="Logo IES">
-            <h4>Graphic Designer</h4>
-            <h5>Jun 2020 - Actualidad</h5>
-        </div>
-    </ng-template>
-    <ng-template swiperSlide class="swiperSlideEducation">
-        <div class="cardEdu">
-            <img src="../../../assets/img/IESLogo.jpg" alt="Logo IES">
-            <h4>Graphic Designer</h4>
-            <h5>Jun 2020 - Actualidad</h5>
-        </div>
-    </ng-template>
-    <ng-template swiperSlide class="swiperSlideEducation">
-        <div class="cardEdu">
-            <img src="../../../assets/img/IESLogo.jpg" alt="Logo IES">
-            <h4>Graphic Designer </h4>
-            <h5>Jun 2020 - Actualidad</h5>
+    <ng-template swiperSlide class="swiperSlideEducation" *ngFor="let Education of edu">
+        <div class="containerEdu">
+            <div class="cardEdu">
+                <img [src]="Education.imgEdu">
+                <h4>{{Education.tituloEdu}}</h4>
+                <h5>{{Education.fechaEdu}}</h5>
+            </div>
+            <div class="eduButtons" *ngIf="isLoggedIn">
+                <button class="buttonEdit"><img src="../../../assets/icons/pen-solid.svg" alt="Botón editar" routerLink="/editedu/{{Education.id}}"></button> 
+                <button class="buttonDelete"><img src="../../../assets/icons/trash-solid.svg" alt="Botón borrar" (click)="delete(Education.id)"></button> 
+            </div>
         </div>
     </ng-template>
   </swiper>

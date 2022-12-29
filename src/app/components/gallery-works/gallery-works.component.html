@@ -1,5 +1,5 @@
 <div class="containerWorks">
-    <button class="buttonAdd" type="button" routerLink="/nuevaexp" *ngIf="isLoggedIn"><img src="../../../assets/icons/plus-solid.svg" alt="Botón editar"></button>
+    <button class="buttonAdd" type="button" routerLink="/nuevaexp" *ngIf="isLoggedIn"><img src="../../../assets/icons/plus-solid.svg" alt="Botón agregar"></button>
     <div class="divWorks">
         <div class="containerWork" *ngFor="let Works of works">
                 <img [src]="Works.imgExp" class="imgWork">

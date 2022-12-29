@@ -25,6 +25,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { interceptorProvider } from './services/interceptor-service';
 import { NewWorkComponent } from './components/gallery-works/new-work.component';
 import { EditWorkComponent } from './components/gallery-works/edit-work.component';
+import { NewEduComponent } from './components/carousel-education/new-edu.component';
+import { EditEduComponent } from './components/carousel-education/edit-edu.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { EditWorkComponent } from './components/gallery-works/edit-work.componen
     StartSessionComponent,
     PortfolioComponent,
     NewWorkComponent,
-    EditWorkComponent
+    EditWorkComponent,
+    NewEduComponent,
+    EditEduComponent
   ],
   imports: [
     BrowserModule,

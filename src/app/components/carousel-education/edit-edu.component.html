@@ -1,0 +1,31 @@
+<div class="newEdu-background">
+    <video muted autoplay loop>
+      <source src="../assets/img/VideoPortadaPortfolio3.mp4" type="video/mp4">
+      <source src="../assets/img/VideoPortadaPortfolio3.ogg" type="video/ogg">
+        Tu navegador no es compatible con videos HTML5
+      </video>
+    <div class="newEdu-box">
+        <h2>Editar Educación</h2>
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" autocomplete="off">
+            <div class="newEduInput-box">
+                <input type="text" id="tituloEdu" name="tituloEdu" [(ngModel)]="edu.tituloEdu" required>
+                <label for="tituloEdu">Título</label>
+            </div>
+            <div class="newEduInput-box">
+                <input type="text" id="fechaEdu" name="fechaEdu" [(ngModel)]="edu.fechaEdu" required>
+                <label for="fechaEdu">Fecha</label>
+            </div> 
+            <div class="newEduInput-box">
+                <input type="text" id="imgEdu" name="imgEdu" [(ngModel)]="edu.imgEdu" required>
+                <label for="imgEdu">URL de la imagen</label>
+            </div>
+            <button type="submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Guardar
+              </button>
+        </form>
+      </div>
+</div>
