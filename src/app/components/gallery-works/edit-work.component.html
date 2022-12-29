@@ -1,0 +1,39 @@
+<div class="editExp-background" *ngIf="expLab">
+    <video muted autoplay loop>
+      <source src="../assets/img/VideoPortadaPortfolio3.mp4" type="video/mp4">
+      <source src="../assets/img/VideoPortadaPortfolio3.ogg" type="video/ogg">
+        Tu navegador no es compatible con videos HTML5
+      </video>
+    <div class="editExp-box">
+        <h2>Nueva Experiencia</h2>
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" autocomplete="off">
+            <div class="editExpInput-box">
+                <input type="text" id="nombreE" name="nombreE" [(ngModel)]="expLab.nombreE" required>
+                <label for="nombreE">Nombre de la empresa</label>
+            </div>
+            <div class="editExpInput-box">
+                <input type="text" id="puesto" name="puesto" [(ngModel)]="expLab.puesto" required>
+                <label for="puesto">Puesto</label>
+            </div>
+            <div class="editExpInput-box">
+                <input type="text" id="fechaExp" name="fechaExp" [(ngModel)]="expLab.fechaExp" required>
+                <label for="fechaExp">Fecha</label>
+            </div>    
+            <div class="editExpInput-box">
+                <input type="text" id="descExp" name="descExp" [(ngModel)]="expLab.descExp" required>
+                <label for="descExp">Descripción de las tareas</label>
+            </div>
+            <div class="editExpInput-box">
+                <input type="text" id="imgExp" name="imgExp" [(ngModel)]="expLab.imgExp" required>
+                <label for="imgExp">URL de la imagen</label>
+            </div>
+            <button type="submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Guardar
+              </button>
+        </form>
+      </div>
+</div>

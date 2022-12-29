@@ -12,7 +12,8 @@
 
 .titleWorks {
     width: 70%;
-    margin: 0 auto 40px auto;
+    height: 250px;
+    margin: 0 auto;
 }
 
 .titleWorks h2 {
@@ -58,7 +59,7 @@
 @media all and (min-width: 1024px) and (max-width: 1440px) {
 
     .titleWorks {
-        margin: 0 auto 30px auto;
+        height: 180px;
     }
     
     .titleWorks h3::before {
@@ -76,7 +77,7 @@
 @media all and (min-width: 768px) and (max-width: 1024px)  {
 
     .titleWorks {
-        margin: 0 auto 30px auto;
+        height: 130px;
     }
 
     .titleWorks h3 {
@@ -92,6 +93,10 @@
 /* Tablet size (768-480) */
 
  @media all and (min-width: 480px) and (max-width: 768px) { 
+
+    .titleWorks {
+        height: 70px;
+    }
 
     .titleWorks h3 {
         width: 29vw;
@@ -112,7 +117,7 @@
     }
 
     .titleWorks {
-        margin: 0 auto 20px auto;
+        height: 70px;
     }
 
     .titleWorks h2 {

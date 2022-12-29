@@ -23,6 +23,8 @@ import { EducationComponent } from './components/education/education.component';
 import { StartSessionComponent } from './components/start-session/start-session.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { interceptorProvider } from './services/interceptor-service';
+import { NewWorkComponent } from './components/gallery-works/new-work.component';
+import { EditWorkComponent } from './components/gallery-works/edit-work.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { interceptorProvider } from './services/interceptor-service';
     SkillsComponent,
     EducationComponent,
     StartSessionComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    NewWorkComponent,
+    EditWorkComponent
   ],
   imports: [
     BrowserModule,
