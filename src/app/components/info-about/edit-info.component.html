@@ -1,0 +1,39 @@
+<div class="editInfo-background">
+    <video muted autoplay loop>
+      <source src="../assets/img/VideoPortadaPortfolio3.mp4" type="video/mp4">
+      <source src="../assets/img/VideoPortadaPortfolio3.ogg" type="video/ogg">
+        Tu navegador no es compatible con videos HTML5
+      </video>
+    <div class="editInfo-box">
+        <h2>Editar Proyecto</h2>
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" autocomplete="off">
+            <div class="editInfoInput-box">
+                <input type="text" id="nombre" name="nombre" [(ngModel)]="person.nombre" required>
+                <label for="nombre">Nombre</label>
+            </div>
+            <div class="editInfoInput-box">
+                <input type="text" id="apellido" name="apellido" [(ngModel)]="person.apellido" required>
+                <label for="apellido">Apellido</label>
+            </div>
+            <div class="editInfoInput-box">
+                <input type="text" id="tituloInfo" name="tituloInfo" [(ngModel)]="person.titulo" required>
+                <label for="tituloInfo">Título</label>
+            </div> 
+            <div class="editInfoInput-box">
+                <input type="text" id="descInfo" name="descInfo" [(ngModel)]="person.descripcion" required>
+                <label for="descInfo">Descripción</label>
+            </div>
+            <div class="editInfoInput-box">
+                <input type="text" id="fotoPerfil" name="fotoPerfil" [(ngModel)]="person.fotoPerfil" required>
+                <label for="fotoPerfil">URL de la imagen</label>
+            </div>  
+            <button type="submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Guardar
+              </button>
+        </form>
+      </div>
+</div>

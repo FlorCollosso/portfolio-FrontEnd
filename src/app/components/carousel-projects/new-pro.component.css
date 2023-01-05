@@ -1,4 +1,4 @@
-.newExp-background {
+.newPro-background {
     backdrop-filter: blur(5px);
     position: fixed;
     width: 100%;
@@ -8,7 +8,7 @@
     z-index: 5;
 }
 
-.newExp-box {
+.newPro-box {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -21,7 +21,7 @@
     border-radius: 10px;
 }
 
-.newExp-box h2 {
+.newPro-box h2 {
     margin: 0 0 30px;
     padding: 0;
     color: #fff;
@@ -29,11 +29,11 @@
     font-size: 2vw;
 }
 
-.newExp-box .newExpInput-box {
+.newPro-box .newProInput-box {
     position: relative;
 }
 
-.newExp-box .newExpInput-box input {
+.newPro-box .newProInput-box input {
     width: 100%;
     padding: 10px 0;
     font-size: 22px;
@@ -44,7 +44,7 @@
     outline: none;
     background: transparent;
 }
-.newExp-box .newExpInput-box label {
+.newPro-box .newProInput-box label {
     position: absolute;
     top:0;
     left: 0;
@@ -55,15 +55,15 @@
     transition: .5s;
 }
 
-.newExp-box .newExpInput-box input:focus ~ label,
-.newExp-box .newExpInput-box input:valid ~ label {
+.newPro-box .newProInput-box input:focus ~ label,
+.newPro-box .newProInput-box input:valid ~ label {
     top: -24px;
     left: 0;
     color: var(--celeste);
     font-size: 18px;
 }
 
-.newExp-box button {
+.newPro-box button {
     position: relative;
     display: inline-block;
     transform: translateX(-50%);
@@ -82,7 +82,7 @@
     cursor: pointer;
 }
 
-.newExp-box button:hover {
+.newPro-box button:hover {
     background-color: var(--celeste);
     color: #fff;
     border-radius: 5px;
@@ -92,12 +92,12 @@
                 0 0 100px var(--celeste);
 }
 
-.newExp-box button span {
+.newPro-box button span {
     position: absolute;
     display: block;
 }
 
-.newExp-box button span:nth-child(1) {
+.newPro-box button span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
@@ -115,7 +115,7 @@
     }
 }
 
-.newExp-box button span:nth-child(2) {
+.newPro-box button span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
@@ -134,7 +134,7 @@
     }
 }
 
-.newExp-box button span:nth-child(3) {
+.newPro-box button span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -153,7 +153,7 @@
     }
 }
 
-.newExp-box button span:nth-child(4) {
+.newPro-box button span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
@@ -199,4 +199,5 @@
 
     
  }
+  
   

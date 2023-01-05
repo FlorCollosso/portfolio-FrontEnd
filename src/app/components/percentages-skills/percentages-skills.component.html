@@ -1,31 +1,63 @@
-<div class="containerSkills">
-    <div class="skillCard">
-        <div class="rating">70</div>
-        <div class="rating-mask"></div>
-        <h4>HTML/CSS</h4>
-    </div>
-    <div class="skillCard">
-        <div class="rating">50</div>
-        <div class="rating-mask"></div>
-        <h4>Angular</h4>
-    </div>
-    <div class="skillCard">
-      <div>
-        <div class="rating">25</div>
-        <div class="rating-mask"></div>
-      </div>
-        <h4>JavaScript</h4>
-    </div>
-    <div class="skillCard">
-      <div>
-        <div class="rating">75</div>
-        <div class="rating-mask"></div>
-      </div>
-        <h4>Photoshop</h4>
-    </div>
-    <div class="skillCard">
-        <div class="rating">95</div>
-        <div class="rating-mask"></div>
-        <h4>Illustrator</h4>
-    </div>
-</div>
+<button class="buttonAdd" type="button" routerLink="/nuevaskill" *ngIf="isLoggedIn"><img src="../../../assets/icons/plus-solid.svg" alt="Botón agregar"></button>
+<swiper class="containerSkills"
+[slidesPerView]="5"
+[spaceBetween]="240"
+[initialSlide]="0"
+[slideToClickedSlide]="true"
+[navigation]="true"
+[autoplay]="{
+  delay: 2500,
+  disableOnInteraction: false
+}"
+[breakpoints]="{
+  '1440': {
+      slidesPerView: 5,
+      spaceBetween: 180
+  },
+  '1280': {
+    slidesPerView: 5,
+    spaceBetween: 30
+  },
+  '1024': {
+      slidesPerView: 4,
+      spaceBetween: -10,
+      initialSlide: 1
+  },
+  '768': {
+      slidesPerView: 3,
+      spaceBetween: 40,
+      initialSlide: 1
+  },
+  '375': {
+      slidesPerView: 3,
+      spaceBetween: -60
+  }
+}"
+>
+    <ng-template swiperSlide class="skillCard" *ngFor="let Skills of skill">
+      <circle-progress 
+      [radius]="setRadius()"
+      [percent]="Skills.porcenSkill"
+      [space]="-setStrokeWidth()"
+      [maxPercent]="100"
+      [outerStrokeWidth]="setStrokeWidth()"
+      [outerStrokeGradient]="false"
+      [outerStrokeColor]="getColor(Skills.porcenSkill)"
+      [outerStrokeLinecap]="'butt'"
+      [innerStrokeColor]="'#2c2c2c'"
+      [innerStrokeWidth]="setStrokeWidth()"
+      [title]="Skills.nombreSkill"
+      [titleColor]="'#ffff'"
+      [titleFontSize]="setFontSize()"
+      [showSubtitle]="false"
+      [showUnits]="false"
+      
+      >
+      {{Skills.porcenSkill}}
+      </circle-progress>
+      <div class="skillButtons" *ngIf="isLoggedIn">
+        <button class="buttonEdit"><img src="../../../assets/icons/pen-solid.svg" alt="Botón editar" routerLink="/editskill/{{Skills.id}}"></button> 
+        <button class="buttonDelete"><img src="../../../assets/icons/trash-solid.svg" alt="Botón borrar" (click)="delete(Skills.id)"></button> 
+      </div>  
+    </ng-template>
+</swiper>

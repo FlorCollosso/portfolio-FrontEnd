@@ -68,7 +68,7 @@ li {
 .imgWork {
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 110%;
     transition: all .5s ease;
     position: relative;
     z-index: 1;
@@ -318,5 +318,15 @@ li {
 
     .textContainerWork li {
         font-size: 2vw;
+    }
+    
+    .workButtons img{
+        height: 15px;
+        cursor: pointer;
+    }
+    
+    .workButtons button {
+        height: 25px;
+        width: 25px;
     }
  }

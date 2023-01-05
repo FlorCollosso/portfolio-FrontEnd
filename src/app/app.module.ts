@@ -27,6 +27,13 @@ import { NewWorkComponent } from './components/gallery-works/new-work.component'
 import { EditWorkComponent } from './components/gallery-works/edit-work.component';
 import { NewEduComponent } from './components/carousel-education/new-edu.component';
 import { EditEduComponent } from './components/carousel-education/edit-edu.component';
+import { EditProComponent } from './components/carousel-projects/edit-pro.component';
+import { NewProComponent } from './components/carousel-projects/new-pro.component';
+import { NewSkillComponent } from './components/percentages-skills/new-skill.component';
+import { EditSkillComponent } from './components/percentages-skills/edit-skill.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { EditInfoComponent } from './components/info-about/edit-info.component';
+import { GeneratePdfComponent } from './components/generate-pdf/generate-pdf.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +56,13 @@ import { EditEduComponent } from './components/carousel-education/edit-edu.compo
     NewWorkComponent,
     EditWorkComponent,
     NewEduComponent,
-    EditEduComponent
+    EditEduComponent,
+    EditProComponent,
+    NewProComponent,
+    NewSkillComponent,
+    EditSkillComponent,
+    EditInfoComponent,
+    GeneratePdfComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +71,8 @@ import { EditEduComponent } from './components/carousel-education/edit-edu.compo
     FormsModule,
     SwiperModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [
     interceptorProvider

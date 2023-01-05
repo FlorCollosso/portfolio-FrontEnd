@@ -1,64 +1,44 @@
- <swiper
-    [effect]="'coverflow'"
-    [grabCursor]="true"
-    [centeredSlides]="true"
-    [initialSlide]="1"
-    [slideToClickedSlide]="true"
-    [slidesPerView]="4"
-    [coverflowEffect]="{
-      rotate: 30,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: false
-    }"
-    [pagination]="false"
-    
-    class="swiperProjects"
-    #swiperProjects
-  >
-
-    <ng-template swiperSlide class="swiperSlideProjects">
-        <div class="projectCard">
-            <div class="cardImg">
-                <img src="../../../assets/img/DiseñoWebMR.jpg" alt="">
-            </div>
-            <div class="cardInfo">
-                <h4>MR Construcciones</h4>
-                <h5>Abr 2020 - Nov 2020</h5>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                <hr>
-                <a href="">www.mrcontrucciones.com.ar</a>
-            </div>
-        </div>
-    </ng-template>
-    <ng-template swiperSlide class="swiperSlideProjects">
-        <div class="projectCard">
-            <div class="cardImg">
-                <img src="../../../assets/img/DiseñoPortfolio.jpg" alt="">
-            </div>
-            <div class="cardInfo">
-                <h4>Mi Portfolio Web</h4>
-                <h5>Jul 2022 - Ene 2023</h5>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                <hr>
-                <a href="">www.florcollosso.com.ar</a>
-            </div>
-        </div>
-    </ng-template>
-    <ng-template swiperSlide class="swiperSlideProjects">
-        <div class="projectCard">
-            <div class="cardImg">
-                <img src="../../../assets/img/DiseñoWebMR.jpg" alt="">
-            </div>
-            <div class="cardInfo">
-                <h4>Crafting</h4>
-                <h5>Ene 2023 - Abr 2023</h5>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. Contrary to popular belief. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                <hr>
-                <a href="">www.crafting.com.ar</a>
-            </div>
-        </div>
-    </ng-template>
+<section>
+  <button class="buttonAdd" type="button" routerLink="/nuevopro" *ngIf="isLoggedIn"><img src="../../../assets/icons/plus-solid.svg" alt="Botón agregar"></button>
+  <swiper
+      [effect]="'coverflow'"
+      [grabCursor]="true"
+      [centeredSlides]="true"
+      [initialSlide]="1"
+      [slideToClickedSlide]="true"
+      [slidesPerView]="4"
+      [coverflowEffect]="{
+        rotate: 30,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false
+      }"
+      [pagination]="false"
+      
+      class="swiperProjects"
+      #swiperProjects
+    >
+  
+      <ng-template swiperSlide class="swiperSlideProjects" *ngFor="let Projects of pro">
+          <div class="projectCard">
+              <div class="cardImg">
+                  <img [src]="Projects.imgPro">
+              </div>
+              <div class="cardInfo">
+                  <h4>{{Projects.tituloPro}}</h4>
+                  <h5>{{Projects.fechaPro}}</h5>
+                  <p>{{Projects.descPro}}</p>
+                  <hr>
+                  <a [href]="Projects.urlPro">{{Projects.urlPro}}</a>
+              </div>
+              <div class="proButtons" *ngIf="isLoggedIn">
+                  <button class="buttonEdit"><img src="../../../assets/icons/pen-solid.svg" alt="Botón editar" routerLink="/editpro/{{Projects.id}}"></button> 
+                  <button class="buttonDelete"><img src="../../../assets/icons/trash-solid.svg" alt="Botón borrar" (click)="delete(Projects.id)"></button> 
+              </div>
+          </div>
+      </ng-template>
   </swiper> 
+</section>
+
 

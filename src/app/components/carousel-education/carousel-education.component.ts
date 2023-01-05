@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
-import { SwiperComponent } from "swiper/angular";
 import SwiperCore, { Navigation } from "swiper";
 import { EduServService } from 'src/app/services/edu-serv.service';
 import { TokenService } from 'src/app/services/token.service';

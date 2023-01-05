@@ -10,7 +10,7 @@ import { EduServService } from 'src/app/services/edu-serv.service';
 })
 export class NewEduComponent implements OnInit {
 
-  tituloEdu: string = '';
+  tituloEdu : string = '';
   fechaEdu : string = '';
   imgEdu : string = '';
 
@@ -22,10 +22,9 @@ export class NewEduComponent implements OnInit {
   onCreate(): void {
     const edu = new Education(this.tituloEdu, this.fechaEdu, this.imgEdu);
     this.eduServ.save(edu).subscribe(data => {
-      alert("educación añadida");
+      alert("Educación añadida");
       this.router.navigate([''])
     }), (err: any) => {
-      console.log("alert")
       alert("Error");
       this.router.navigate(['']);
     }

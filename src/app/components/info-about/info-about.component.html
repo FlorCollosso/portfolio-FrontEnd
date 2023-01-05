@@ -2,10 +2,12 @@
     <div class="circleDiv">
         <img [src]="person.fotoPerfil" alt="Foto de perfil" class="profileImg">
     </div>
+   
     <div class="textInfoProfile">
         <h1>{{person.nombre}} {{person.apellido}}</h1>
         <h4>{{person.titulo}}</h4>
         <p>{{person.descripcion}}</p>
-        <img src="../../../assets/icons/download_arrow.png" alt="Icono de descarga" id="descargaCv">
-    </div> 
+        <img src="../../../assets/icons/download_arrow.png" id="descargaCv" alt="Icono de descarga" (click)="downloadPdf()">
+    </div>
 </div>
+<button class="buttonEdit"><img src="../../../assets/icons/pen-solid.svg" alt="Botón editar" routerLink="/editinfo/{{person.id}}"></button>

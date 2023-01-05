@@ -10,9 +10,6 @@
     position: absolute;
     right: 170px;
     margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     z-index: 2;
 }
 
@@ -262,7 +259,7 @@
     }
 
     .swiperSlideEducation{
-        margin: 0 0 60px 0;
+        margin: 30px 0 60px 0;
     }
 
     .swiperSlideEducation h4 {
@@ -292,5 +289,28 @@
     .swiper-button-prev:after {
         font-size: 25px !important;
 
+    }
+
+    .buttonAdd {
+        width: 40px;
+        height: 40px;
+        right: 170px;
+        margin-top: 0;
+        z-index: 2;
+    }
+
+    .eduButtons {
+        margin-top: 20px;
+    }
+    
+    .eduButtons img{
+        height: 13px;
+        cursor: pointer;
+    }
+    
+    .eduButtons button {
+        height: 20px;
+        width: 20px;
+        margin: 0 5px;
     }
  }

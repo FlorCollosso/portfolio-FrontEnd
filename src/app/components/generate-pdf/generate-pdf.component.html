@@ -1,0 +1,54 @@
+<body>
+    <div id="contentPDF">
+        <div class="about">
+            <img [src]="person.fotoPerfil">
+            <div class="aboutContent">
+                <h2>{{person.nombre}} {{person.apellido}}</h2>
+                <h4>{{person.titulo}}</h4>
+                <h5>{{person.descripcion}}</h5>
+            </div>
+        </div>
+        <div class="bodyContent">
+            <div class="section">
+                <h2>Cursos y carreras</h2>
+                <div class="eduContent" *ngFor="let Education of edu">
+                    <div>
+                        <h3>{{Education.tituloEdu}}</h3>
+                        <h6>{{Education.fechaEdu}}</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Experiencia</h2>
+                <div class="workContent" *ngFor="let Works of works">
+                    <div>
+                        <h3>{{Works.nombreE}}</h3>
+                        <h4>{{Works.puesto}}</h4>
+                        <h5>{{Works.fechaExp}}</h5>
+                        <h6>{{Works.descExp}}</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Proyectos</h2>
+                <div class="proContent" *ngFor="let Projects of pro">
+                    <div>
+                        <h3>{{Projects.tituloPro}}</h3>
+                        <h4>{{Projects.fechaPro}}</h4>
+                        <h5>{{Projects.descPro}}</h5>
+                        <h6>{{Projects.urlPro}}</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Habilidades</h2>
+                <div *ngFor="let Skills of skill">
+                    <ul>
+                        <li>{{Skills.nombreSkill}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>

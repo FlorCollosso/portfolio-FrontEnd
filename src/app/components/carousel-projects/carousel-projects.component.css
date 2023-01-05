@@ -2,6 +2,59 @@
 @import "swiper/modules/pagination/pagination.min.css";
 @import "swiper/swiper-bundle.css";
 
+section {
+    display: flex;
+    flex-direction: column;
+}
+.buttonAdd {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 170px;
+    margin: 0;
+    z-index: 2;
+}
+
+.buttonAdd:hover {
+    transition: .2s ease-in;
+    transform: scale(1.2);
+}
+
+.buttonAdd img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.proButtons {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.proButtons img{
+    cursor: pointer;
+}
+
+.proButtons button {
+    height: 25px;
+    width: 25px;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    margin: 0 15px;
+}
+
+.proButtons button:hover {
+    transition: .2s ease-in;
+    transform: scale(1.2);
+}
+
 .swiperProjects {
    height: 850px;
    width: 100%;
@@ -11,7 +64,7 @@
 .projectCard {
     background: rgba(92, 91, 91, 0.3);
     width: 440px;
-    height: 600px; 
+    height: fit-content; 
     padding: 30px;
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
@@ -27,6 +80,10 @@
     transform: translateY(-8px);
 }
 
+.remplazoProp {
+    background: rgba(92, 91, 91, .8);
+}
+
 .cardImg {
     overflow: hidden;
     width: 440px;
@@ -35,11 +92,12 @@
 }
 
 .cardInfo {
-    height: 260px;
+    height: fit-content;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .swiperSlideProjects {
@@ -62,6 +120,7 @@
     color: #fff;
     letter-spacing: 1px;
     text-align: left;
+    margin-top: 5px;
 }
 
 .swiperSlideProjects h5 {
@@ -70,6 +129,7 @@
     font-weight: 400;
     font-style: italic;
     text-align: left;
+    margin-top: 5px;
 }
 
 .swiperSlideProjects p {
@@ -77,6 +137,7 @@
     color: #fff;
     text-align: left;
     font-weight: 100;
+    margin-top: 5px;
 }
 
 .swiperSlideProjects a {
@@ -84,6 +145,7 @@
     letter-spacing: 1px;
     color: darkgrey;
     font-weight: 300;
+    margin-top: 5px;
 }
 
 .swiperSlideProjects hr {
@@ -93,6 +155,7 @@
     top: 0;
     height: 1px;
     background: rgba(255, 255, 255, .2);
+    margin-top: 15px;
 }
 
 /* Tamaño por defecto pantallas (1440-1024) */
@@ -106,8 +169,7 @@
 
     .projectCard {
         width: 340px;
-        height: 500px;
-        padding: 25px;
+        padding: 30px;
         border-radius: 40px;
     }
 
@@ -126,18 +188,22 @@
 
     .swiperSlideProjects h4 {
         font-size: 28px;
+        margin-top: 0;
     }
     
     .swiperSlideProjects h5 {
         font-size: 20px;
+        margin-top: 0;
     }
     
     .swiperSlideProjects p {
         font-size: 18px;
+        margin-top: 0;
     }
     
     .swiperSlideProjects a {
         font-size: 16px;
+        margin-top: 0;
     }
 }
 
@@ -146,13 +212,12 @@
 @media all and (min-width: 768px) and (max-width: 1024px)  {
 
     .swiperProjects {
-        height: 550px;
+        height: 650px;
         margin-top: 4.5vw;
      }
 
     .projectCard {
         width: 280px;
-        height: 390px;
         padding: 25px;
         border-radius: 30px;
     }
@@ -163,7 +228,6 @@
     }
 
     .cardInfo {
-        height: 180px;
         margin-top: 20px;
         display: flex;
         flex-direction: column;
@@ -172,18 +236,40 @@
 
     .swiperSlideProjects h4 {
         font-size: 22px;
+        margin-top: 0;
     }
     
     .swiperSlideProjects h5 {
         font-size: 16px;
+        margin-top: 0;
     }
     
     .swiperSlideProjects p {
         font-size: 14px;
+        margin-top: 0;
     }
     
     .swiperSlideProjects a {
         font-size: 12px;
+        margin-top: 0;
+    }
+
+    .proButtons button {
+        height: 20px;
+        width: 20px;
+        margin: 0 8px;
+        position: relative;
+        right: 0;
+    }
+
+    .proButtons img {
+        height: 15px;
+        width: 15px;
+    }
+
+    .proButtons {
+        margin: 15px 0 0 0;
+        justify-content: flex-end;
     }
 }
 
@@ -198,7 +284,6 @@
 
     .projectCard {
         width: 200px;
-        height: 305px;
         padding: 18px;
         border-radius: 25px;
     }
@@ -209,27 +294,46 @@
     }
 
     .cardInfo {
-        height: 160px;
         margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
     }
 
     .swiperSlideProjects h4 {
         font-size: 19px;
+        margin-top: 0;
     }
     
     .swiperSlideProjects h5 {
         font-size: 14px;
+        margin-top: 5px;
     }
     
     .swiperSlideProjects p {
         font-size: 12px;
+        margin-top: 6px;
     }
     
     .swiperSlideProjects a {
-        font-size: 10px;
+        font-size: 9px;
+        margin-top: 6px;
+    }
+
+    .proButtons button {
+        height: 12px;
+        width: 12px;
+        margin: 0 3px;
+        position: relative;
+        right: 0;
+    }
+
+    .proButtons img {
+        height: 8px;
+        width: 8px;
+    }
+
+    .proButtons {
+        margin: 10px 0 0 0;
+        justify-content: flex-end;
     }
  }
   
@@ -244,7 +348,6 @@
 
     .projectCard {
         width: 120px;
-        height: 200px;
         padding: 10px;
         border-radius: 16px;
     }
@@ -264,17 +367,43 @@
 
     .swiperSlideProjects h4 {
         font-size: 12px;
+        margin-top: 0;
     }
     
     .swiperSlideProjects h5 {
         font-size: 9px;
+        margin-top: 0;
     }
     
     .swiperSlideProjects p {
         font-size: 7px;
+        margin-top: 0;
     }
     
     .swiperSlideProjects a {
         font-size: 5px;
+        margin-top: 0;
+    }
+
+    .swiperSlideProjects hr {
+        margin-top: 0;
+    }
+
+    .proButtons button {
+        height: 12px;
+        width: 12px;
+        margin: 0 3px;
+        position: relative;
+        right: 0;
+    }
+
+    .proButtons img {
+        height: 8px;
+        width: 8px;
+    }
+
+    .proButtons {
+        margin: 3px 0 0 0;
+        justify-content: flex-end;
     }
  }

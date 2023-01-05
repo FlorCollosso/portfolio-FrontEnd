@@ -24,10 +24,9 @@ export class NewWorkComponent implements OnInit {
   onCreate(): void {
     const work = new Works(this.nombreE, this.puesto, this.fechaExp, this.descExp, this.imgExp);
     this.expServ.save(work).subscribe(data => {
-      alert("experiencia añadida");
+      alert("Experiencia añadida");
       this.router.navigate([''])
     }), (err: any) => {
-      console.log("alert")
       alert("Error");
       this.router.navigate(['']);
     }

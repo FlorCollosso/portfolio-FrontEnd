@@ -1,92 +1,100 @@
+@import "swiper/swiper.min.css";
+@import "swiper/modules/navigation/navigation.min.css";
+
+.buttonAdd {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 170px;
+    margin-top: 0;
+    z-index: 2;
+}
+
+.buttonAdd:hover {
+    transition: .2s ease-in;
+    transform: scale(1.2);
+}
+
+.buttonAdd img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.skillButtons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.skillButtons img{
+    height: 20px;
+    cursor: pointer;
+}
+
+.skillButtons button {
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    margin: 0 5px;
+}
+
+.skillButtons button:hover {
+    transition: .2s ease-in;
+    transform: scale(1.2);
+}
+
 .containerSkills {
     color: #fff;
+    flex-wrap: wrap;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px 200px 50px 200px;
+    padding: 150px 200px 150px 200px;
 }
 
 .skillCard {
-    padding: 0 50px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     --rating-size: 80px;
     --bar-size: 12px;
 }
 
 .skillCard h4 {
     position: relative;
-    top: -4.5vw;
     letter-spacing: 1px;
+    bottom: 60px;
 }
 
-/* Classes to give different colors to ratings, based on their score */
-
-.rating.good {
-    background: var(--rating-color-good);
-    color: transparent;
+.swiper-button-prev,
+.swiper-button-next {
+        transform: scale(.8);
+        top: 50% !important;
 }
 
-.rating.meh {
-    background: var(--rating-color-meh);
-    color: transparent;
+.swiper-button-next {
+    display: none;
 }
-
-.rating.bad {
-    background: var(--rating-color-bad);
-    color: transparent;
-}
-
-@media all and (min-width: 768px) {
-
-    .skillCard {
-        --rating-size: 100px;
-        --bar-size: 12px;
-    }
-
-    .rating {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 100%;
-        overflow: hidden;
-        background: var(--celeste);
-        color: var(--celeste);
-        width: var(--rating-size);
-        height: var(--rating-size);
-        z-index: 2;
-    }
-
-    /* Bar background */
-
-    .rating-mask {
-        position: relative;
-        bottom: var(--rating-size);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 100%;
-        overflow: hidden;
-        background: var(--grisMedio);
-        color: var(--celeste);
-        width: var(--rating-size);
-        height: var(--rating-size);
-        z-index: 1;
-    }
   
-    /* Bar mask, creates an inner circle with the same color as thee background */
+swiper:hover .swiper-button-next {
+    display: block;
+}
 
-    .rating::after {
-        content: "";
-        position: absolute;
-        top: var(--bar-size);
-        right: var(--bar-size);
-        bottom: var(--bar-size);
-        left: var(--bar-size);
-        background: var(--grisOscuro);
-        border-radius: inherit;
-        z-index: 2;
-    }
+.swiper-button-prev {
+    display: none;
+}
+  
+swiper:hover .swiper-button-prev {
+    display: block;
 }
 
 /* Default screen size (1440-1024) */
@@ -96,14 +104,18 @@
     .skillCard {
         padding: 0 40px;
         text-align: center;
-        --rating-size: 130px;
-        --bar-size: 15px;
     }
 
     .skillCard h4 {
         position: relative;
         top: -90px;
         letter-spacing: 1px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        transform: scale(.8);
+        top: 50% !important;
     }
 }
 
@@ -114,8 +126,6 @@
     .skillCard {
         padding: 0 30px;
         text-align: center;
-        --rating-size: 100px;
-        --bar-size: 13px;
     }
 
     .skillCard h4 {
@@ -123,6 +133,12 @@
         top: -6.5vw;
         letter-spacing: 1px;
         font-size: 15px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        transform: scale(.8);
+        top: 50% !important;
     }
 }
 
@@ -133,8 +149,6 @@
     .skillCard {
         padding: 0 20px;
         text-align: center;
-        --rating-size: 80px;
-        --bar-size: 10px;
     }
 
     .skillCard h4 {
@@ -142,6 +156,12 @@
         top: -6.5vw;
         letter-spacing: 1px;
         font-size: 12px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        transform: scale(.8);
+        top: 50% !important;
     }
  }
   
@@ -154,12 +174,10 @@
         position: relative;
         flex-wrap: wrap;
         width: 100%;
-        padding: 10px 0 80px 0;
+        padding: 30px 0 150px 0;
     }
 
     .skillCard {
-        --rating-size: 100%;
-        --bar-size: 12px;
         padding-top: 10px;
         text-align: left;
         width: 70%;
@@ -174,47 +192,32 @@
         font-size: 10px;
     }
 
-    .rating {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        background: var(--celeste);
-        width: var(--rating-size);
-        height: 10px;
-        top: 22px;
-        z-index: 2;
+    .skillButtons img{
+        height: 8px;
+        cursor: pointer;
+    }
+    
+    .skillButtons button {
+        height: 15px;
+        width: 15px;
+        margin: 0 3px;
     }
 
-    /* Bar background */
-
-    .rating-mask {
-        position: relative;
-        bottom: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        background: var(--grisMedio);
-        color: var(--celeste);
-        width: var(--rating-size);
-        height: 10px;
-        top: 12px;
-        z-index: 1;
+    .buttonAdd {
+        width: 20px;
+        height: 20px;
+        right: 30px;
     }
-  
-    /* Bar mask, creates an inner circle with the same color as thee background */
 
-    .rating::after {
-        content: "";
-        position: absolute;
-        top: var(--bar-size);
-        right: var(--bar-size);
-        bottom: var(--bar-size);
-        left: var(--bar-size);
-        background: var(--grisOscuro);
-        border-radius: inherit;
-        z-index: 2;
+    .buttonAdd img {
+        width: 12px;
+        height: 12px;
     }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        transform: scale(.5);
+        top: 27.5% !important;
+    }
+    
  }

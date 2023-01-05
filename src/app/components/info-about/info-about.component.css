@@ -53,6 +53,22 @@
     cursor: pointer;
 }
 
+.buttonEdit {
+    height: 25px;
+    width: 25px;
+    background: transparent;
+    border: none;
+    margin: 0 5px;
+    position: absolute;
+    right: 28%;
+    top: 50%;
+    z-index: 2;
+}
+
+.buttonEdit img {
+    cursor: pointer;
+}
+
 /* Default screen size (1440-1024) */
 
 @media all and (min-width: 1024px) and (max-width: 1440px) {

@@ -1,0 +1,39 @@
+<div class="editPro-background">
+    <video muted autoplay loop>
+      <source src="../assets/img/VideoPortadaPortfolio3.mp4" type="video/mp4">
+      <source src="../assets/img/VideoPortadaPortfolio3.ogg" type="video/ogg">
+        Tu navegador no es compatible con videos HTML5
+      </video>
+    <div class="editPro-box">
+        <h2>Editar Proyecto</h2>
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" autocomplete="off">
+            <div class="editProInput-box">
+                <input type="text" id="tituloPro" name="tituloPro" [(ngModel)]="pro.tituloPro" required>
+                <label for="tituloPro">Título</label>
+            </div>
+            <div class="editProInput-box">
+                <input type="text" id="fechaPro" name="fechaPro" [(ngModel)]="pro.fechaPro" required>
+                <label for="fechaPro">Fecha</label>
+            </div> 
+            <div class="editProInput-box">
+                <input type="text" id="descPro" name="descPro" [(ngModel)]="pro.descPro" required>
+                <label for="descPro">Descripción</label>
+            </div> 
+            <div class="editProInput-box">
+                <input type="text" id="urlPro" name="urlPro" [(ngModel)]="pro.urlPro" required>
+                <label for="urlPro">URL del proyecto</label>
+            </div>
+            <div class="editProInput-box">
+                <input type="text" id="imgPro" name="imgPro" [(ngModel)]="pro.imgPro" required>
+                <label for="imgPro">URL de la imagen</label>
+            </div>
+            <button type="submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Guardar
+              </button>
+        </form>
+      </div>
+</div>

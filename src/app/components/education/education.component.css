@@ -107,6 +107,10 @@
         padding-top: 45px;
     }
 
+    .titleEducation {
+        height: 30px;
+    }
+
     .titleEducation h3 {
         font-size: 4vw;
     }

@@ -9,9 +9,22 @@ import { Observable } from 'rxjs';
 export class PersonService {
 
   URL = 'http://localhost:8080/person/';
+
   constructor(private http: HttpClient) { }
 
   public getPerson(): Observable<person> {
     return this.http.get<person>(this.URL + 'traer/perfil')
+  }
+
+  public detail(id: number): Observable<person> {
+    return this.http.get<person>(this.URL + `detail/${id}`);
+  }
+
+  public update(id: number, person: person): Observable<any>{
+    return this.http.put<person>(this.URL + `update/${id}`, person);
+  }
+
+  public lista(): Observable<person[]> {
+    return this.http.get<person[]>(this.URL + 'lista');
   }
 }
