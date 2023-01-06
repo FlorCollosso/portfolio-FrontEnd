@@ -10,4 +10,4 @@
         <img src="../../../assets/icons/download_arrow.png" id="descargaCv" alt="Icono de descarga" (click)="downloadPdf()">
     </div>
 </div>
-<button class="buttonEdit"><img src="../../../assets/icons/pen-solid.svg" alt="Botón editar" routerLink="/editinfo/{{person.id}}"></button>
+<button class="buttonEdit" *ngIf="isLoggedIn"><img src="../../../assets/icons/pen-solid.svg" alt="Botón editar" routerLink="/editinfo/{{person.id}}"></button>
