@@ -8,7 +8,7 @@ import { Education } from '../models/education';
 })
 export class EduServService {
 
-  expURL = 'http://localhost:8080/edu/'
+  expURL = 'https://portfolio-backend-g85n.onrender.com/edu/'
 
   constructor(private httpClient: HttpClient) { }
 

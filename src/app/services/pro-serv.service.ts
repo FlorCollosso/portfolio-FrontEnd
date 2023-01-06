@@ -8,7 +8,7 @@ import { Projects } from '../models/projects';
 })
 export class ProServService {
 
-  expURL = 'http://localhost:8080/project/'
+  expURL = 'https://portfolio-backend-g85n.onrender.com/project/'
 
   constructor(private httpClient: HttpClient) { }
 

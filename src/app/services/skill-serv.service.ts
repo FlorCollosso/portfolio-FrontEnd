@@ -8,7 +8,7 @@ import { Skills } from '../models/skills';
 })
 export class SkillServService {
 
-  expURL = 'http://localhost:8080/skill/'
+  expURL = 'https://portfolio-backend-g85n.onrender.com/skill/'
 
   constructor(private httpClient: HttpClient) { }
 

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'https://localhost:8080'
+  apiBaseUrl: 'https://portfolio-backend-g85n.onrender.com'
 };
 
 /*

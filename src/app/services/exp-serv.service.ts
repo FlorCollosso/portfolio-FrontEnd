@@ -8,7 +8,7 @@ import { Works } from '../models/works';
 })
 export class ExpServService {
 
-  expURL = 'http://localhost:8080/explab/'
+  expURL = 'https://portfolio-backend-g85n.onrender.com/explab/'
 
   constructor(private httpClient: HttpClient) { }
 
