@@ -7,14 +7,12 @@
 
 - Se trata de una **Single Page Application (SPA)** realizada utilizando tecnologías Frontend como ser **HTML, CSS, Angular y Bootstrap**.
 
-- La **primera versión** se encuentra disponible [en este enlace](http://burgosmanuel.ar "en este enlace").
-
 ## 🔧 Instalación
 - Si queremos correr la aplicación en un entorno local debemos tener en cuenta lo siguiente: 
 
 1. Clonar el repositorio utilizando GIT o descargando el archivo ZIP:
 
-    `git clone https://github.com/BurgosManuel/portfolio-Frontend.git`
+    `git clone https://github.com/FlorCollosso/portfolio-FrontEnd.git`
 
 2. Instalar las dependencias a través de NPM.
 
