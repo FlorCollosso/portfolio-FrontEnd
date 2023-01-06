@@ -12,7 +12,7 @@ import { GeneratePdfComponent } from '../generate-pdf/generate-pdf.component';
 })
 export class InfoAboutComponent implements OnInit {
 
-  person: person = new person ("", "", "", "", "");
+  person: person = new person ("", "", "", "", "", "");
   per: person[] = [];
 
   constructor(public personServ: PersonService, private tokenService: TokenService) { }

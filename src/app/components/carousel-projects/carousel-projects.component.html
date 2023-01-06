@@ -30,7 +30,7 @@
                   <h5>{{Projects.fechaPro}}</h5>
                   <p>{{Projects.descPro}}</p>
                   <hr>
-                  <a [href]="Projects.urlPro">{{Projects.urlPro}}</a>
+                  <a [href]="Projects.urlPro" target="_blank">{{Projects.urlPro}}</a>
               </div>
               <div class="proButtons" *ngIf="isLoggedIn">
                   <button class="buttonEdit"><img src="../../../assets/icons/pen-solid.svg" alt="Botón editar" routerLink="/editpro/{{Projects.id}}"></button> 

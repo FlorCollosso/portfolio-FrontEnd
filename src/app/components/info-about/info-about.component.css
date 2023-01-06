@@ -43,6 +43,7 @@
     font-weight: 200;
     font-size: 1.3vw;
     margin-bottom: 60px;
+    line-height: 1.8vw;
 }
 
 .textInfoProfile img {
@@ -102,6 +103,14 @@
         margin-bottom: 50px;
     }
 
+    .buttonEdit {
+        height: 20px;
+        width: 20px;
+        right: 20%;
+        top: 41%;
+        line-height: 20px;
+    }
+
     #descargaCv {
         width: 70px;
     }
@@ -138,6 +147,14 @@
     .textInfoProfile p {
         font-size: 1.8vw;
         margin-bottom: 50px;
+        line-height: 25px;
+    }
+
+    .buttonEdit {
+        height: 20px;
+        width: 20px;
+        right: 20%;
+        top: 41%;
     }
 
     #descargaCv {
@@ -176,6 +193,14 @@
     .textInfoProfile p {
         font-size: 1.8vw;
         margin-bottom: 40px;
+        line-height: 20px;
+    }
+
+    .buttonEdit {
+        height: 18px;
+        width: 18px;
+        right: 17%;
+        top: 41%;
     }
 
     #descargaCv {
@@ -214,6 +239,14 @@
     .textInfoProfile p {
         font-size: 2vw;
         margin-bottom: 30px;
+        line-height: 15px;
+    }
+
+    .buttonEdit {
+        height: 15px;
+        width: 15px;
+        right: 15%;
+        top: 45%;
     }
 
     #descargaCv {

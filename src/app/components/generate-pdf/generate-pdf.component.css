@@ -1,5 +1,4 @@
 #contentPDF {
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -14,7 +13,7 @@
     border: 1px solid black;
     margin: 20px auto;
     border-radius: 30px;
-    width: 90%;
+    width: 95%;
     position: relative;
     left: 0;
 }
@@ -22,65 +21,75 @@
 .about {
     display: flex;
     align-items: center;
-    padding: 90px 90px 50px 90px;
+    padding: 20px 90px 50px 90px;
 }
 
 .aboutContent {
-    width: 50%;
+    width: 60%;
     margin: 40px;
 }
 
 .aboutContent h2 {
-    font-size: 45px;
+    font-size: 55px;
+}
+
+.aboutContent h3 {
+    font-size: 30px;
 }
 
 .aboutContent h4 {
     margin-top: 8px;
+    font-size: 25px;
 }
 
 .aboutContent h5 {
     margin-top: 8px;
+    font-size: 22px;
 }
 
 
 h2 {
     margin: 10px 0;
-    font-size: 30px;
+    font-size: 50px;
     color: #12113d;
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 600;
     margin-top: 10px;
     color: #292727;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 35px;
+    margin-top: 10px;
     font-weight: 600;
     color: #3d3d3d;
 }
 
 h5 {
-    font-size: 20px;
+    font-size: 30px;
+    margin-top: 10px;
     font-weight: 500;
 }
 
 h6 {
-    font-size: 18px;
+    font-size: 28px;
+    margin-top: 10px;
     font-weight: 400;
 }
 
 div {
     width: 100%;
-    padding: 5px;
+    padding: 15px 0 0 5px;
 }
 
 img {
     position: relative;
     margin-top: 40px;
     border-radius: 50%;
+    width: 600px;
 }
 
 li {

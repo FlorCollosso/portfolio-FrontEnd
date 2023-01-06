@@ -4,20 +4,13 @@
             <img [src]="person.fotoPerfil">
             <div class="aboutContent">
                 <h2>{{person.nombre}} {{person.apellido}}</h2>
-                <h4>{{person.titulo}}</h4>
+                <h3>{{person.titulo}}</h3>
                 <h5>{{person.descripcion}}</h5>
+                <h4>Contáctame:</h4>
+                <h5>Tel: +{{person.numTel}}</h5>
             </div>
         </div>
         <div class="bodyContent">
-            <div class="section">
-                <h2>Cursos y carreras</h2>
-                <div class="eduContent" *ngFor="let Education of edu">
-                    <div>
-                        <h3>{{Education.tituloEdu}}</h3>
-                        <h6>{{Education.fechaEdu}}</h6>
-                    </div>
-                </div>
-            </div>
             <div class="section">
                 <h2>Experiencia</h2>
                 <div class="workContent" *ngFor="let Works of works">
@@ -26,6 +19,15 @@
                         <h4>{{Works.puesto}}</h4>
                         <h5>{{Works.fechaExp}}</h5>
                         <h6>{{Works.descExp}}</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Cursos y carreras</h2>
+                <div class="eduContent" *ngFor="let Education of edu">
+                    <div>
+                        <h3>{{Education.tituloEdu}}</h3>
+                        <h6>{{Education.fechaEdu}}</h6>
                     </div>
                 </div>
             </div>
@@ -44,7 +46,7 @@
                 <h2>Habilidades</h2>
                 <div *ngFor="let Skills of skill">
                     <ul>
-                        <li>{{Skills.nombreSkill}}</li>
+                        <li><h5>{{Skills.nombreSkill}}</h5></li>
                     </ul>
                 </div>
             </div>

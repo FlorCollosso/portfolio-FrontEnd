@@ -42,8 +42,8 @@ section {
 }
 
 .proButtons button {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     background: transparent;
     cursor: pointer;
     border: none;
@@ -145,7 +145,7 @@ section {
     letter-spacing: 1px;
     color: darkgrey;
     font-weight: 300;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .swiperSlideProjects hr {

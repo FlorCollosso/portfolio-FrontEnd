@@ -24,7 +24,7 @@ export class GeneratePdfComponent implements OnInit {
   works: Works[] = [];
   per: person[] = [];
   skill: Skills[] = [];
-  person: person = new person ("", "", "", "", "");
+  person: person = new person ("", "", "", "", "", "");
 
   constructor(private skillServ: SkillServService, private eduServ: EduServService, public personServ: PersonService, private proServ: ProServService, private expServ: ExpServService) { }
 
