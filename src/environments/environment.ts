@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'https://portfolio-backend-g85n.onrender.com'
+  apiBaseUrl: 'http://florcollosso.us-east-1.elasticbeanstalk.com'
 };
 
 /*

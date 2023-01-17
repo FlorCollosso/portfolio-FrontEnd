@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class PersonService {
 
-  URL = 'https://portfolio-backend-g85n.onrender.com/person/';
+  URL = 'http://florcollosso.us-east-1.elasticbeanstalk.com/person/';
 
   constructor(private http: HttpClient) { }
 

@@ -9,7 +9,7 @@ import { JwtDto } from '../models/jwt-dto';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'https://portfolio-backend-g85n.onrender.com/auth/';
+  authURL = 'http://florcollosso.us-east-1.elasticbeanstalk.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -8,7 +8,7 @@ import { Skills } from '../models/skills';
 })
 export class SkillServService {
 
-  expURL = 'https://portfolio-backend-g85n.onrender.com/skill/'
+  expURL = 'http://florcollosso.us-east-1.elasticbeanstalk.com/skill/'
 
   constructor(private httpClient: HttpClient) { }
 

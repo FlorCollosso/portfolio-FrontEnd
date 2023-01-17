@@ -5,6 +5,7 @@
     transform: translateX(-50%);
     text-align: center;
     color: #fff;
+    z-index: 2;
 }
 
 .coverTitle h2 { 
@@ -14,8 +15,21 @@
     text-align: left;    
 }
 
-.cover video {
-    display: block;
+.cover {
+    height: fit-content;
+}
+
+/* For screen size (+ 1440) */
+
+@media all and (min-width: 1440px) {
+    .cover video {
+        position: absolute;
+        height: 60vw;
+    }
+
+    .cover {
+        height: 60vw;
+    }
 }
 
 /* Default screen size (1440-1024) */
@@ -24,6 +38,14 @@
 
     .apLogo {
         padding: 25px 40px;
+    }
+
+    .cover video {
+        position: absolute;
+    }
+
+    .cover {
+        height: 60vw;
     }
 }
 
@@ -34,6 +56,14 @@
     .coverTitle h2 { 
         font-size: 22vw;    
     }
+
+    .cover video {
+        position: absolute;
+    }
+
+    .cover {
+        height: 100vw;
+    }
 }
 
  /* Tablet size (768-480) */
@@ -43,6 +73,15 @@
     .coverTitle h2 { 
         font-size: 25vw;    
     }
+
+    .cover video {
+        position: absolute;
+    }
+
+    .cover {
+        height: 140vw;
+    }
+    
  }
   
  /* Phone size (480-menos ) */
@@ -56,4 +95,10 @@
     .coverTitle h2 { 
         font-size: 25vw;    
     }
+
+    .cover video {
+        display: block;
+        position: absolute;
+    }
+    
  }

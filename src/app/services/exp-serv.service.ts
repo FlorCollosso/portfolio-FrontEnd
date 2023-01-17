@@ -8,7 +8,7 @@ import { Works } from '../models/works';
 })
 export class ExpServService {
 
-  expURL = 'https://portfolio-backend-g85n.onrender.com/explab/'
+  expURL = 'http://florcollosso.us-east-1.elasticbeanstalk.com/explab/'
 
   constructor(private httpClient: HttpClient) { }
 

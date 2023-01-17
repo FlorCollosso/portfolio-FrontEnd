@@ -8,7 +8,7 @@ import { Projects } from '../models/projects';
 })
 export class ProServService {
 
-  expURL = 'https://portfolio-backend-g85n.onrender.com/project/'
+  expURL = 'http://florcollosso.us-east-1.elasticbeanstalk.com/project/'
 
   constructor(private httpClient: HttpClient) { }
 
