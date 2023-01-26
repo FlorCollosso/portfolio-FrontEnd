@@ -11,6 +11,10 @@ Para ver la página en funcionamiento **[hacer click aquí](http://portfolio-flo
 
 - Se utilizaron algunas librerías como **Swiper, Ng-circle-progress, jsPDF, entre otras.**
 
+- Se puede descargar un currículum con los datos del usuario en formato PDF.
+
+- Al iniciar sesión se puede agregar, editar y eliminar cualquier dato del portfolio.
+
 **IMPORTANTE:** Debemos tener un servidor con el proyecto *Backend* activo para poder obtener los datos y registrar usuarios, caso contrario, no se renderizarán los componentes de Angular. Para más información ir al **[repositorio backend.](https://github.com/FlorCollosso/Portfolio-BackEnd "repositorio backend.")**
 
 ## 📩 Contacto
