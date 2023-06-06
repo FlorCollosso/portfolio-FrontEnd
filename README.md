@@ -23,7 +23,7 @@ Para ver la página en funcionamiento **[hacer click aquí](http://portfolio-flo
 
 [![Demostración de la Pokédex](https://i9.ytimg.com/vi/tsDQPSA4uWE/mq3.jpg?sqp=CMT8n6MG-oaymwEmCMACELQB8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGEIgZSheMA8%3D&rs=AOn4CLAKY0AtfmcY0eEW_aLtvp5OHczcAA&retry=2)](https://youtu.be/tsDQPSA4uWE)
 
-Haz clic en la imagen para ver la demostración completa en YouTube.
+Hacer click en la imagen para ver la demostración completa en YouTube.
 
 ## 📩 Contacto
 
