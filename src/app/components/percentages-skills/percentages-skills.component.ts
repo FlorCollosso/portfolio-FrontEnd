@@ -56,13 +56,13 @@ export class PercentagesSkillsComponent implements OnInit {
   }
 
   setRadius(): number {
-    if(window.innerWidth <= 480) {
-      return 35;
-    } else if (window.innerHeight <=770) {
+    if(window.innerWidth <= 480 || screen.width <= 480) {
       return 45;
-    } else if(window.innerWidth <= 1024) {
-      return 60;
-    } else if (window.innerWidth <= 1280) {
+    } else if (window.innerHeight <=770 || screen.width <= 770) {
+      return 45;
+    } else if(window.innerWidth <= 1024 || screen.width <= 1024) {
+      return 65;
+    } else if (window.innerWidth <= 1280 || screen.width <= 1280) {
       return 75;
     } else {
       return 80;
@@ -70,13 +70,13 @@ export class PercentagesSkillsComponent implements OnInit {
   }
 
   setStrokeWidth(): number {
-    if(window.innerWidth <= 480) {
-      return 8;
-    } else if (window.innerWidth <= 770) {
+    if(window.innerWidth <= 480 || screen.width <= 480) {
       return 12;
-    } else if(window.innerWidth <= 1024) {
+    } else if (window.innerWidth <= 770 || screen.width <= 770) {
+      return 15;
+    } else if(window.innerWidth <= 1024 || screen.width <= 1024) {
       return 14;
-    } else if (window.innerWidth <= 1280) {
+    } else if (window.innerWidth <= 1280 || screen.width <= 1280) {
       return 18;
     } else {
       return 20;

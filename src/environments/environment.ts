@@ -4,7 +4,11 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'http://florcollosso.us-east-1.elasticbeanstalk.com'
+  // Producción
+  apiBaseUrl: 'https://portfolio-backend-0bjo.onrender.com'
+
+  // Desarrollo
+  //apiBaseUrl: 'http://localhost:8080'
 };
 
 /*

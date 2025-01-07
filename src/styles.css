@@ -19,6 +19,7 @@
 
 *::-webkit-scrollbar {
     width: .6vw;
+    display: none;
   }
   
 *::-webkit-scrollbar-thumb {        
@@ -27,7 +28,7 @@
   }
 
 body {
-    background: #fff;
+    background: var(--celeste);
     overflow: overlay;
     grid-template-areas: "main" "." "footer";
     overflow-x: hidden;

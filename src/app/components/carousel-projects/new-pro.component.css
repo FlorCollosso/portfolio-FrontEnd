@@ -35,7 +35,7 @@
 
 .newPro-box .newProInput-box input {
     width: 100%;
-    padding: 10px 0;
+    padding: 15px 0 10px 0;
     font-size: 22px;
     color: #fff;
     margin-bottom: 30px;
@@ -183,7 +183,25 @@
 
 @media all and (min-width: 768px) and (max-width: 1024px)  {
 
-   
+    .newPro-box h2 {
+        margin: 0 0 30px;
+        font-size: 3vw;
+    }
+
+    .newPro-box .newProInput-box input {
+       
+        font-size: 20px;
+       
+    }
+    .newPro-box .newProInput-box label {
+        padding: 10px 0;
+        font-size: 18px;
+    }
+    
+    .newPro-box .newProInput-box input:focus ~ label,
+    .newPro-box .newProInput-box input:valid ~ label {
+        font-size: 16px;
+    }
 }
 
  /* Tablet size (768-480) */

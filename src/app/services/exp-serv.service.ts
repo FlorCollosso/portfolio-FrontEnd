@@ -8,7 +8,11 @@ import { Works } from '../models/works';
 })
 export class ExpServService {
 
-  expURL = 'http://florcollosso.us-east-1.elasticbeanstalk.com/explab/'
+  // Producción
+  expURL = 'https://portfolio-backend-0bjo.onrender.com/explab/';
+
+  // Desarrollo
+  //expURL = 'http://localhost:8080/explab/';
 
   constructor(private httpClient: HttpClient) { }
 

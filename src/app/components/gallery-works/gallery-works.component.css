@@ -38,7 +38,7 @@ li {
     border: none;
     background: transparent;
     position: absolute;
-    right: 170px;
+    right: 6vw;
     margin-top: 20px;
     display: flex;
     align-items: center;
@@ -66,9 +66,9 @@ li {
 }
 
 .imgWork {
-    background-size: cover;
     width: 100%;
-    height: 110%;
+    height: 100%;
+    object-fit: cover;
     transition: all .5s ease;
     position: relative;
     z-index: 1;
@@ -154,7 +154,6 @@ li {
         margin-top: 12px;
         width: 50px;
         height: 50px;
-        right: 210px;
     }
 
     .buttonAdd img {
@@ -162,29 +161,49 @@ li {
         height: 23px;
     }
 
+    .divWorks {
+        padding: 50px 40px;
+    }
+
+    .containerWork {
+        height: 30vw;
+        width: 40vw;
+    }
+
     .textContainerWork {
         padding: 30px 40px;
     }
 
     .textContainerWork h4 {
-        font-size: 2.2vw;
+        font-size: 1.5vw;
     }
 
     .textContainerWork h5  {
-        font-size: 1vw;
-        margin-bottom: 15px;
+        font-size: .5;
+        margin-bottom: 10px;
     }
 
     .t-stroke {
-        font-size: 5.5vw;
-    } 
+        -webkit-text-stroke: 2px #db7b93a4;
+        font-size: 5vw;
+    }
+
+    .textContainerWork h6 {
+        width: 60%;
+        font-size: 1vw;
+        font-weight: 300;
+    }
+
+    .t-stroke span {
+        -webkit-text-stroke: 2px var(--rosaClaro);
+    }
+      
 }
 
 @media all and (min-width: 950px) and (max-width: 1280px) {
     
     .buttonAdd {
         margin-top: 15px;
-        right: 125px;
     }
 
 }
@@ -197,17 +216,20 @@ li {
         margin-top: 15px;
         width: 45px;
         height: 45px;
-        right: 130px;
     }
 
     .buttonAdd img {
         width: 20px;
         height: 20px;
     }
+
+    .divWorks {
+        padding: 50px 40px;
+    }
     
     .containerWork {
-        height: 520px;
-        width: 750px;
+        height: 30vw;
+        width: 40vw;
     }
 
     .textContainerWork {
@@ -215,17 +237,31 @@ li {
     }
 
     .textContainerWork h4 {
-        font-size: 4vw;
+        font-size: 18px;
     }
 
     .textContainerWork h5  {
-        font-size: 1.8vw;
-        margin-bottom: 12px;
+        font-size: 14px;
+        margin-bottom: 10px;
     }
 
     .t-stroke {
-        font-size: 10vw;
+        -webkit-text-stroke: 2px #db7b93a4;
+        font-size: 50px;
     }
+
+    .textContainerWork h6 {
+        width: 90%;
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .t-stroke span {
+        -webkit-text-stroke: 2px var(--rosaClaro);
+    }
+      
+
+    
 }
 
  /* Tablet size (768-480) */
@@ -245,8 +281,12 @@ li {
     }
     
     .containerWork {
-        height: 420px;
-        width: 580px;
+        height: 45vw;
+        width: 70vw;
+    }
+
+    .divWorks {
+        padding: 50px 40px;
     }
 
     .textContainerWork {
@@ -254,16 +294,27 @@ li {
     }
 
     .textContainerWork h4 {
-        font-size: 35px;
+        font-size: 18px;
     }
 
     .textContainerWork h5  {
-        font-size: 16px;
-        margin-bottom: 12px;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .textContainerWork h6 {
+        width: 70%;
+        font-size: 14px;
+        font-weight: 300;
     }
 
     .t-stroke {
-        font-size: 12vw;
+        -webkit-text-stroke: 2px #db7b93a4;
+        font-size: 8vw;
+    }
+
+    .t-stroke span {
+        -webkit-text-stroke: 2px var(--rosaClaro);
     }
  }
   
@@ -274,7 +325,6 @@ li {
     .buttonAdd {
         width: 25px;
         height: 25px;
-        right: 50px;
         bottom: 1210px;
     }
 
@@ -288,8 +338,8 @@ li {
     }
 
     .containerWork {
-        height: 200px;
-        width: 380px;
+        height: 45vw;
+        width: 70vw;
     }
 
     .textContainerWork {
@@ -297,24 +347,30 @@ li {
     }
 
     .textContainerWork h4 {
-        font-size: 15px;
+        font-size: 10px;
+        margin-top: 5px;
     }
 
     .textContainerWork h5  {
-        font-size: 8px;
+        font-size: 6px;
         margin-bottom: 5px;
     }
 
     .textContainerWork h6 {
-        color: #fff;
         width: 70%;
-        font-size: 10px;
+        font-size: 8px;
         font-weight: 300;
     }
 
     .t-stroke {
-        font-size: 12vw;
+        -webkit-text-stroke: 1px #db7b93a4;
+        font-size: 9vw;
     }
+
+    .t-stroke span {
+        -webkit-text-stroke: 1px var(--rosaClaro);
+    }
+    
 
     .textContainerWork li {
         font-size: 2vw;

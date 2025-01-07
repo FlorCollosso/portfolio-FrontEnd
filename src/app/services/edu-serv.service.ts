@@ -8,7 +8,11 @@ import { Education } from '../models/education';
 })
 export class EduServService {
 
-  expURL = 'http://florcollosso.us-east-1.elasticbeanstalk.com/edu/'
+  // Producción
+  expURL = 'https://portfolio-backend-0bjo.onrender.com/edu/';
+
+  // Desarrollo
+  //expURL = 'http://localhost:8080/edu/';
 
   constructor(private httpClient: HttpClient) { }
 

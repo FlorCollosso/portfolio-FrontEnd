@@ -8,6 +8,10 @@
     z-index: 2;
 }
 
+.cover video {
+    width: fit-content;
+}
+
 .coverTitle h2 { 
     font-size: 16vw;
     font-family: aileron, sans-serif;
@@ -17,13 +21,14 @@
 
 .cover {
     height: fit-content;
+    overflow: hidden;
 }
 
 /* For screen size (+ 1440) */
 
 @media all and (min-width: 1440px) {
     .cover video {
-        position: absolute;
+        object-fit: cover;
         height: 60vw;
     }
 
@@ -41,7 +46,7 @@
     }
 
     .cover video {
-        position: absolute;
+        object-fit: cover;
     }
 
     .cover {
@@ -58,7 +63,7 @@
     }
 
     .cover video {
-        position: absolute;
+        object-fit: cover;
     }
 
     .cover {
@@ -97,8 +102,7 @@
     }
 
     .cover video {
-        display: block;
-        position: absolute;
+        object-fit: cover;
     }
     
  }

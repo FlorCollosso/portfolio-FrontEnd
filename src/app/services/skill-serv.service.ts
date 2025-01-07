@@ -7,8 +7,12 @@ import { Skills } from '../models/skills';
   providedIn: 'root'
 })
 export class SkillServService {
+  
+  // Producción
+  expURL = 'https://portfolio-backend-0bjo.onrender.com/skill/'
 
-  expURL = 'http://florcollosso.us-east-1.elasticbeanstalk.com/skill/'
+  // Desarrollo
+  //expURL = 'http://localhost:8080/skill/'
 
   constructor(private httpClient: HttpClient) { }
 

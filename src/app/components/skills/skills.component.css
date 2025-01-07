@@ -93,6 +93,12 @@
 
  @media all and (min-width: 480px) and (max-width: 768px) { 
 
+    .titleSkills h3 {
+        width: 30vw;
+        font-size: 2.1vw;
+        bottom: 8.5vw;
+    }
+
     .titleSkills h3::before {
         width: 12.5vw;
         bottom: 0;
